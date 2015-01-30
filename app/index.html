@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>code blue</title>
+    <title>CodeBlue</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
 
@@ -12,42 +12,33 @@
     <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
     <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
     <!-- endbuild -->
+
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild-->
+    
     <!-- build:vulcanized elements/elements.vulcanized.html -->
     <link rel="import" href="elements/elements.html">
     <!-- endbuild-->
-    <link rel="import" 
-      href="../../bower_components/core-toolbar/core-toolbar.html">
-    <link rel="import" 
-      href="../../bower_components/core-menu/core-menu.html">
-    <link rel="import" 
-      href="../../bower_components/core-item/core-item.html">
-    <link rel="import" 
-      href="../../bower_components/core-header-panel/core-header-panel.html">
-    <link rel="import" 
-      href="../../bower_components/core-drawer-panel/core-drawer-panel.html">
-    <link rel="import" 
-      href="../../bower_components/core-scaffold/core-scaffold.html">
+    
+    <!-- Google Fonts: Playfair, Quicksand, Raleway, Open Sans-->
+    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400italic|Quicksand|Raleway:400,100,500|Open+Sans' rel='stylesheet' type='text/css'>
+    
+    <!-- imports core components -->
+    <link rel="import" href="imports.html">
   </head>
-  <body unresolved>
-    <core-scaffold>
-      <core-header-panel navigation flex>
-        <core-toolbar id="navheader">
-          <span>Menu</span>
-        </core-toolbar>
-        <core-menu>
-          <core-item label="One"></core-item>
-          <core-item label="Two"></core-item>
-        </core-menu>
-      </core-header-panel>
-
-      <span tool>Title</span>
-      <div class="content">
-        If drawer is hidden, press button todisplay drawer.
-      </div>
-    </core-scaffold>
+  <body fullbleed layout vertical>
+    <core-header-panel flex class="core-narrow">
+      <core-toolbar class="medium-tall" id="navheader" middleJustify="center">
+        <h1 class="middle">Code Blue</h1>
+      </core-toolbar>
+    </core-header-panel>
+    <div layout end id="footer">
+      <p>Made with 
+        <a href="https://polymer-project.org/">Polymer Project</a>
+        <core-icon icon="polymer"/>
+      </p>
+    </div>
     <!-- build:js scripts/app.js -->
     <script src="scripts/app.js"></script>
     <!-- endbuild-->
