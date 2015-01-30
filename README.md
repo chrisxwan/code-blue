@@ -2,7 +2,7 @@
 
 High School Hackathon brought to you by [Y-Hack](https://yhack.org)
 
-![Code Blue Logo](/app/images/Code-blue-logo.png)
+![Code Blue Logo](/app/images/code-blue-logo.png)
 
 ## Contributors
 
