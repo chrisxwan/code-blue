@@ -22,17 +22,21 @@
     <!-- endbuild-->
     
     <!-- Google Fonts: Playfair, Quicksand, Raleway, Open Sans-->
-    <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400italic|Quicksand|Raleway:400,100,500|Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato|Playfair+Display|Old+Standard+TT|Raleway' rel='stylesheet' type='text/css'>
     
     <!-- imports core components -->
     <link rel="import" href="imports.html">
   </head>
   <body fullbleed layout vertical>
-    <core-header-panel flex class="core-narrow">
+    <core-header-panel flex class="core-narrow" mode="cover">
       <core-toolbar class="medium-tall" id="navheader" middleJustify="center">
         <h1 class="middle">Code Blue</h1>
       </core-toolbar>
+      <div id="content">
+        <faq-block></faq-block>
+      </div>
     </core-header-panel>
+    
     <div layout end id="footer">
       <p>Made with 
         <a href="https://polymer-project.org/">Polymer Project</a>
