@@ -29,11 +29,3 @@ paper-ripple {
   color: #50a3f7;
 }
 
-html /deep/ paper-dialog {
-    color: green;
-}
-
-html /deep/ paper-dialog::shadow #scroller {
-    height: 300px;
-    width: 300px;
-}

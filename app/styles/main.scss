@@ -56,3 +56,7 @@ a {
   padding: 0.2em 0;
 }
 
+html /deep/ paper-dialog::shadow #scroller {
+    height: 300px;
+    width: 500px;
+}
