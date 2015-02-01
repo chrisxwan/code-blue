@@ -15,7 +15,7 @@ paper-ripple {
   user-select: none;
 }
 
-.card {
+#card {
   position: relative;
   display: inline-block;
   width: 300px; 
@@ -23,4 +23,17 @@ paper-ripple {
   vertical-align: top;
   background-color: #fff;
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+}
+
+#card::shadow #ripple{
+  color: #50a3f7;
+}
+
+html /deep/ paper-dialog {
+    color: green;
+}
+
+html /deep/ paper-dialog::shadow #scroller {
+    height: 300px;
+    width: 300px;
 }

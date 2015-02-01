@@ -6,15 +6,19 @@
 <polymer-element name="faq-block" attributes="">
   <template>
     <link rel="stylesheet" href="faq-block.css">
-    <div class="card">
-      
-      <paper-ripple id="ripple" style="recenteringTouch" fit></paper-ripple>
-    </div>
+    <paper-button id="card" role="button" on-tap="{{ tapHandler }}"> FAQ
+    </paper-button>
+    <paper-action-dialog backdrop="" autoclosedisabled="false" layered="false" role="dialog" layout="" vertical="" tabindex="-1" style="position: fixed; outline: none; display: none;" class="dialog">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </paper-action-dialog>
   </template>
   <script>
     (function () {
       Polymer({
-        // define element prototype here
+        tapHandler: function(e) {
+          var d = e.target.nextElementSibling;
+          d.toggle();
+        }
       });
     })();
   </script>
