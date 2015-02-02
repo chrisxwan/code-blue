@@ -20,7 +20,7 @@ a {
 }
 
 .content {
-    margin: 60px 60px 60px 0;
+    // margin: 60px 60px 60px 0;
 }
 
 #navheader{
@@ -79,7 +79,7 @@ html /deep/ paper-dialog::shadow #scroller {
 .core-header{
   height: 1000px;
   line-height: 60px;
-  padding: 25px 10px 0px 10px;
+  padding: 10px 10px 0px 10px;
   // z-index: 1000;
   background-color: white;
   transition: height 0.2s;
