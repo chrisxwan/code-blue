@@ -60,3 +60,37 @@ html /deep/ paper-dialog::shadow #scroller {
     height: 300px;
     width: 500px;
 }
+
+.content {
+  height: 2000px;
+  background: linear-gradient(rgb(214, 227, 231), lightblue);
+    background-image: linear-gradient(rgb(214, 227, 231), rgb(173, 216, 230));
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: initial;
+}
+
+.core-header{
+  height: 1000px;
+  line-height: 60px;
+  padding: 25px 10px 0px 10px;
+  // z-index: 1000;
+  background-color: white;
+  transition: height 0.2s;
+    transition-property: height;
+    transition-duration: 0.2s;
+    transition-timing-function: initial;
+    transition-delay: initial;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
