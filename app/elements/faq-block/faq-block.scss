@@ -7,7 +7,7 @@
 #card {
   position: relative;
   display: inline-block;
-  width: 23%; 
+  width: 100%; 
   min-width: 195px;
   height: 250px;
   vertical-align: top;
@@ -19,3 +19,6 @@
   color: #50a3f7;
 }
 
+div{
+  display: block;
+}
