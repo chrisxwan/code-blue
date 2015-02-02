@@ -63,8 +63,8 @@ html /deep/ paper-dialog::shadow #scroller {
 
 .content {
   height: 1600px;
-  background: linear-gradient(rgb(214, 227, 231), lightblue);
-    background-image: linear-gradient(rgb(214, 227, 231), rgb(173, 216, 230));
+  background: linear-gradient(rgb(214, 227, 231), darkblue);
+    background-image: linear-gradient(rgb(214, 227, 231), rgb(92, 172, 238)); //rgb(173, 216, 230));
     background-position-x: initial;
     background-position-y: initial;
     background-size: initial;
@@ -99,7 +99,5 @@ h2{
   text-align: center;
 }
 
-faq-block{
-  width: 30%;
-}
+
 
