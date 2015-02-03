@@ -37,14 +37,20 @@
         <img src="images/codeblue-hlogo.png" alt="">
         <div class="waves">
             <ul id="scene">
-              <li class="layer" data-depth="0.40" id="back"><img src="../images/parallax/back.png" alt=""></li>
-              <li class="layer" data-depth="1.00" id="front"><img src="../images/parallax/front.png" alt=""></li>
+              <li class="layer"
+              data-depth="0.40"
+              id="back"
+              data-limit-y="100"
+              ><img src="../images/parallax/back.png" alt=""></li>
+              <li class="layer" 
+              data-depth="1.00" 
+              id="front"><img src="../images/parallax/front.png" alt=""></li>
             </ul>
         </div>
         <script type="text/javascript">
             var scene = document.getElementById('scene');
             console.log(scene);
-            var parallax = new Parallax(scene);
+            var parallax = new Parallax(scene); 
         </script>
       </div>
     </core-header-panel>

@@ -1,5 +1,4 @@
 body {
-  background-color: yellow;
   font-family: "Raleway", sans-serif;
   color: #333;
 }
@@ -18,14 +17,16 @@ core-icon[icon="polymer"] {
 
 .waves{
   position: absolute;
-  bottom: 0;
+  bottom:   0;
 }
+
 a {
   color: #50a3f7;
 }
 
 .layer {
   margin-left: -30%;
+  margin-bottom: -1%;
 }
 
 #resize{
