@@ -25,6 +25,9 @@
     
     <!-- Google Fonts: Playfair, Quicksand, Raleway, Open Sans-->
     <link href='http://fonts.googleapis.com/css?family=Lato|Playfair+Display|Old+Standard+TT|Raleway' rel='stylesheet' type='text/css'>
+
+    <script src="bower_components/parallax/deploy/parallax.js"></script>
+    <script src="scripts/parallax-bg.js"></script>
     
     <!-- imports core components -->
     <link rel="import" href="imports.html">
@@ -33,7 +36,17 @@
     <core-header-panel flex class="core-narrow" mode="cover">
       <div class="core-header tall">
         <img src="images/codeblue-hlogo.png" alt="">
-        <parallax-bg></parallax-bg>
+        <div>
+            <ul id="scene">
+              <li class="layer" data-depth="0.40" id="back"><img src="../images/parallax/back.png" alt=""></li>
+              <li class="layer" data-depth="1.00" id="front"><img src="../images/parallax/front.png" alt=""></li>
+            </ul>
+        </div>
+        <script type="text/javascript">
+            var scene = document.getElementById('scene');
+            console.log(scene);
+            var parallax = new Parallax(scene);
+        </script>
       </div>
     </core-header-panel>
       
