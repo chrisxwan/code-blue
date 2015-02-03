@@ -1,6 +1,6 @@
 # Code Blue
 
-High School Hackathon brought to you by [Y-Hack](https://yhack.org)
+High School Hackathon brought to you by [Y-Hack](http://www.yhack.org)
 
 ![Code Blue Logo](/app/images/codeblue-vlogo.png)
 
