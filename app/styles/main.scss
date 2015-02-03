@@ -23,6 +23,16 @@ a {
   margin-left: -50%;
 }
 
+#front{
+  // opacity: 1000000;
+  position: relative;
+  // box-shadow: 10px 10px 5px #888888;
+}
+
+#back{
+  position: absolute;
+}
+
 .waves{
   margin-top: 25%;
 }
