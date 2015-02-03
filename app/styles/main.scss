@@ -1,5 +1,5 @@
 body{
-  background-color: #F0F0F0;
+  background-color: #F0F0F0; 
   font-family: "Raleway", sans-serif;
   color: #333;
 }
@@ -9,11 +9,11 @@ h1 {
   font-size: 60px;
 }
 
-core-icon[icon="polymer"] {
-  color: #e4004f;
-  height: 30px;
-  width: 30px;
-}
+// core-icon[icon="polymer"] {
+//   color: #e4004f;
+//   height: 30px;
+//   width: 30px;
+// }
 
 .waves{
   position: absolute;
@@ -103,6 +103,7 @@ html /deep/ paper-dialog::shadow #scroller {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 15px;
 }
 
 h2{
