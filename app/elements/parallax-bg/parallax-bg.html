@@ -1,0 +1,19 @@
+<link rel="import" href="../../bower_components/polymer/polymer.html">
+
+<polymer-element name="parallax-bg" attributes="">
+  <template>
+    <link rel="stylesheet" href="parallax-bg.css">
+    <script href="/app/bower_components/campoaia/jquery.stellar.js"></script>
+    <ul id="scene">
+      <li class="layer" data-depth="0.00"><img src="/app/images/parallax/front.png" alt=""></li>
+      <li class="layer" data-depth="1.00"><img src="/app/images/parallax/back.png" alt=""></li>
+    </ul>
+  </template>
+  <script>
+    (function () {
+      Polymer({
+        // define element prototype here
+      });
+    })();
+  </script>
+</polymer-element>
