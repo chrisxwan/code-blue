@@ -4,7 +4,6 @@
   <template>
     <link rel="stylesheet" href="parallax-bg.css">
     <script src="../../bower_components/parallax/deploy/parallax.js"></script>
-    <script src="parallax-bg.js"></script>
     <ul id="scene">
       <li class="layer" data-depth="0.00"><img src="../../images/parallax/front.png" alt="" id="resize"></li>
       <li class="layer" data-depth="0.40"><img src="../../images/parallax/back.png" alt="" id="resize"></li>
@@ -13,8 +12,6 @@
   <script>
     (function () {
       Polymer({
-        var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene);
       });
     })();
   </script>
