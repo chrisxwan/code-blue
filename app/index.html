@@ -38,16 +38,22 @@
   <body fullbleed layout vertical >
     <core-header-panel flex class="core-narrow" mode="cover">
       <div class="core-header tall">
-        <img class="logo" src="images/codeblue-hlogo.png" alt="">
+        <img class="logo"
+        src="images/codeblue-hlogo.png"
+        max-height="99" 
+        height="50%"
+        max-width="699"
+        width="50%">
         <div class="waves">
             <ul id="scene" data-limit-x="false" data-limit-y="false">
               <li class="layer"
               data-depth="0.40"
               id="back"
-              data-limit-y="100"
-              ><img src="../images/parallax/back.png" alt=""></li>
-<!--               <li data-depth="0.80" id="shipImage">
-              <img src="../images/parallax/ship.png" alt=""></li> -->
+              data-limit-y="100">
+                <img src="../images/parallax/back.png" alt="">
+              </li>
+              <li data-depth="0.80" id="shipImage">
+                <img src="../images/parallax/ship.png" alt=""></li>
               <li class="layer" 
               data-depth="1.00" 
               id="front"><img src="../images/parallax/front.png" alt=""></li>

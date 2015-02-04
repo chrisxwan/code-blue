@@ -9,105 +9,6 @@ h1 {
   font-size: 60px;
 }
 
-// core-icon[icon="polymer"] {
-//   color: #e4004f;
-//   height: 30px;
-//   width: 30px;
-// }
-
-.waves{
-  position: absolute;
-  bottom:   0;
-}
-
-a {
-  color: #50a3f7;
-}
-
-.layer {
-  margin-left: -30%;
-  margin-bottom: -3%;
-}
-
-#resize{
-    margin-top: 200px;
-}
-
-.content {
-    // margin: 60px 60px 60px 0;
-}
-
-#navheader{
-  background-color: transparent;
-  color: #ffffff;
-}
-
-
-
-.hero-unit {
-  // margin: 50px auto 0 auto;
-  // width: 300px;
-  // font-size: 18px;
-  // font-weight: 200;
-  // line-height: 30px;
-  // background-color: #eee;
-  // border-radius: 6px;
-  // padding: 60px;
-}
-
-.hero-unit h1 {
-  // font-size: 60px;
-  // line-height: 1;
-  // letter-spacing: -1px;
-}
-
-.browsehappy {
-  // margin: 0.2em 0;
-  // background: #ccc;
-  // color: #000;
-  // padding: 0.2em 0;
-}
-
-html /deep/ paper-dialog::shadow #scroller {
-    // height: 300px;
-    // width: 500px;
-}
-
-.content {
-  // height: 1600px;
-  // background: linear-gradient(rgb(214, 227, 231), darkblue);
-  //   background-image: linear-gradient(rgb(214, 227, 231), rgb(92, 172, 238)); //rgb(173, 216, 230));
-  //   background-position-x: initial;
-  //   background-position-y: initial;
-  //   background-size: initial;
-  //   background-repeat-x: initial;
-  //   background-repeat-y: initial;
-  //   background-attachment: initial;
-  //   background-origin: initial;
-  //   background-clip: initial;
-  //   background-color: initial;
-}
-
-// .core-header{
-//   height: 1000px;
-//   line-height: 60px;
-//   // padding: 10px 10px 0px 10px;
-//   // z-index: 1000;
-//   background-color: white;
-//   transition: height 0.2s;
-//     transition-property: height;
-//     transition-duration: 0.2s;
-//     transition-timing-function: initial;
-//     transition-delay: initial;
-// }
-
-.logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-}
-
 h2{
   text-align: center;
 }
@@ -116,6 +17,35 @@ h2{
   max-width:300px; 
   z-index: 10001;
   max-height:700px;
+}
+
+#navheader{
+  background-color: transparent;
+  color: #ffffff;
+}
+
+.waves{
+  position: absolute;
+  bottom: 0;
+  max-height: 191px;
+  height: 25%;
+  width: 100%;
+}
+
+.layer {
+  margin-left: -15%;
+  margin-bottom: -3%;
+}
+
+.content {
+    margin: 60px 60px 60px 0;
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
 }
 
 .ship{
