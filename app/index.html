@@ -15,7 +15,7 @@
 
     <!-- STELLAR -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
+    <script src="bower_components/campoaia/jquery.stellar.js"></script>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 
@@ -44,36 +44,35 @@
         height="50%"
         max-width="699"
         width="50%">
-        <ul id="scene" data-limit-x="false" data-limit-y="false">
-          <div class="waves">
-            <li class="layer"
-            data-depth="0.40"
-            id="back"
-            data-limit-y="100">
-              <img src="../images/parallax/back.png" alt="">
-            </li>
-            <li class="layer" 
-            data-depth="1.00" 
-            id="front"><img src="../images/parallax/front.png" alt=""></li>
-          </div>
-          <div class="ship">
-            <li class="layer" id ="ship" data-depth="0.80">
-            <img src="../images/parallax/ship.png" alt="" id="shipImage"></li>
-          </div>
-        </ul>
-        <!-- <div class="ship">
-          <ul id="ship">
-            <li class="layer" data-depth="0.80" id="shipImage">
-              <img src="../images/parallax/ship.png" alt=""></li>
-          </ul>
-        </div> -->
-        <script type="text/javascript">
-            var scene = document.getElementById('scene');
-            console.log(scene);
-            var parallax = new Parallax(scene); 
-        </script>
       </div>
     </core-header-panel>
+    <ul id="scene" data-limit-x="false" data-limit-y="false">
+      <div class="waves">
+        <li class="layer"
+        data-depth="0.40"
+        id="back"
+        data-limit-y="100">
+          <img src="../images/parallax/back.png" alt="">
+        </li>
+        <li class="layer" 
+        data-depth="1.00" 
+        id="front"><img src="../images/parallax/front.png" alt=""></li>
+      </div>
+      <li class="layer" id ="ship" data-depth="0.80">
+        <img src="../images/parallax/ship.png" alt="" id="shipImage">
+      </li>
+    </ul>
+    <!-- <div class="ship">
+      <ul id="ship">
+        <li class="layer" data-depth="0.80" id="shipImage">
+          <img src="../images/parallax/ship.png" alt=""></li>
+      </ul>
+    </div> -->
+  <script type="text/javascript">
+      var scene = document.getElementById('scene');
+      console.log(scene);
+      var parallax = new Parallax(scene); 
+  </script>
       
 
     <!-- <div layout end id="footer">

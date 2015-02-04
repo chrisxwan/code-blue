@@ -21,7 +21,6 @@ h2{
 }
 
 #scene{
-  position: absolute;
   bottom: 0;
 }
 
@@ -32,7 +31,7 @@ h2{
 #ship{
   position: relative;
   z-index: 2;
-  // margin-bottom: 5%;
+  bottom: 10px;
 }
 
 #back{
@@ -47,10 +46,11 @@ h2{
 }
 
 #shipImage{
+  position: absolute;
+  bottom: 100px;
   height:auto; 
   width:auto;
   max-width:300px; 
   max-height:700px;
+  -webkit-transform: rotate(15deg);
 }
-
-
