@@ -12,6 +12,8 @@
     <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
     <script src="bower_components/webcomponentsjs/webcomponents.js"></script>
     <!-- endbuild -->
+
+    <!-- STELLAR -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
 
@@ -37,14 +39,16 @@
     <core-header-panel flex class="core-narrow" mode="cover">
       <div class="core-header tall">
         <img class="logo" src="images/codeblue-hlogo.png" alt="">
-        <div class="waves">
+        <div>
             <ul id="scene" data-limit-x="false" data-limit-y="false">
-              <li class="layer"
+              <li class="layer waves"
               data-depth="0.40"
               id="back"
               data-limit-y="100"
               ><img src="../images/parallax/back.png" alt=""></li>
-              <li class="layer" 
+              <li class="layer"
+              data-depth="0.80"><img src="../images/parallax/ship.png" id="ship" alt=""></li>
+              <li class="layer waves" 
               data-depth="1.00" 
               id="front"><img src="../images/parallax/front.png" alt=""></li>
             </ul>
