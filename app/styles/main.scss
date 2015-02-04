@@ -112,12 +112,16 @@ h2{
   text-align: center;
 }
 
-#ship{
+#shipImage{
+  max-width:300px; 
+  z-index: 10001;
+  max-height:700px;
+}
+
+.ship{
   margin-left: 200%;
   margin-bottom: 50%;
   z-index: 1000;
   height:auto; 
-  width:auto; 
-  max-width:300px; 
-  max-height:700px;
+  width:auto;   
 }
