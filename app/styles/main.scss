@@ -20,25 +20,6 @@ h2{
   margin-left: -15%;
 }
 
-
-.content {
-    margin: 60px 60px 60px 0;
-}
-
-.logo{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-}
-
-.ship{
-  margin-left: 200%;
-  margin-bottom: 50%;
-  height:auto; 
-  width:auto;   
-}
-
 #scene{
   position: absolute;
   bottom: 0;
@@ -48,8 +29,21 @@ h2{
   z-index: 3;
 }
 
+#ship{
+  position: relative;
+  z-index: 2;
+  // margin-bottom: 5%;
+}
+
 #back{
   z-index: 1;
+}
+
+.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
 }
 
 #shipImage{
@@ -57,5 +51,6 @@ h2{
   width:auto;
   max-width:300px; 
   max-height:700px;
-  z-index: 2;
 }
+
+
