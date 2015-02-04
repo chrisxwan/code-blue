@@ -13,17 +13,6 @@ h2{
   text-align: center;
 }
 
-#shipImage{
-  max-width:300px; 
-  z-index: 10001;
-  max-height:700px;
-}
-
-#navheader{
-  background-color: transparent;
-  color: #ffffff;
-}
-
 .waves{
   position: absolute;
   bottom: 0;
@@ -49,7 +38,22 @@ h2{
 .ship{
   margin-left: 200%;
   margin-bottom: 50%;
-  z-index: 1000;
   height:auto; 
   width:auto;   
+}
+
+#front{
+  z-index: 3;
+}
+
+#back{
+  z-index: 1;
+}
+
+#shipImage{
+  height:auto; 
+  width:auto;
+  max-width:300px; 
+  max-height:700px;
+  z-index: 2;
 }

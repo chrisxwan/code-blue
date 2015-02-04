@@ -44,21 +44,27 @@
         height="50%"
         max-width="699"
         width="50%">
-        <div class="waves">
-            <ul id="scene" data-limit-x="false" data-limit-y="false">
-              <li class="layer"
-              data-depth="0.40"
-              id="back"
-              data-limit-y="100">
-                <img src="../images/parallax/back.png" alt="">
-              </li>
-              <li data-depth="0.80" style="margin-left: 25%; position: relative; margin-bottom: 50px; bottom: 1">
-                <img src="../images/parallax/ship.png" alt="" id="shipImage"></li>
-              <li
-              data-depth="1.00" 
-              id="front"><img src="../images/parallax/front.png" alt=""></li>
-            </ul>
-        </div>
+        <ul id="scene" data-limit-x="false" data-limit-y="false">
+          <div class="waves">
+            <li class="layer"
+            data-depth="0.40"
+            id="back"
+            data-limit-y="100">
+              <img src="../images/parallax/back.png" alt="">
+            </li>
+            <li class="layer" 
+            data-depth="1.00" 
+            id="front"><img src="../images/parallax/front.png" alt=""></li>
+          </div>
+          <li class="layer" data-depth="0.80" id="ship">
+            <img src="../images/parallax/ship.png" alt="" id="shipImage"></li>
+        </ul>
+        <!-- <div class="ship">
+          <ul id="ship">
+            <li class="layer" data-depth="0.80" id="shipImage">
+              <img src="../images/parallax/ship.png" alt=""></li>
+          </ul>
+        </div> -->
         <script type="text/javascript">
             var scene = document.getElementById('scene');
             console.log(scene);
