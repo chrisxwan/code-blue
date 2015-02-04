@@ -14,13 +14,10 @@ h2{
 }
 
 .waves{
-  position: absolute;
-  bottom: 0;
+  position: relative;  
   max-height: 191px;
   height: 25%;
-  width: 100%;
   margin-left: -15%;
-  margin-bottom: -3%;
 }
 
 
@@ -40,6 +37,11 @@ h2{
   margin-bottom: 50%;
   height:auto; 
   width:auto;   
+}
+
+#scene{
+  position: absolute;
+  bottom: 0;
 }
 
 #front{
