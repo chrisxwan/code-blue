@@ -13,19 +13,12 @@ h2{
   text-align: center;
 }
 
-.waves{
-  position: relative;  
-  max-height: 191px;
-  height: 25%;
+ul img{
   margin-left: -15%;
 }
 
-// #scene{
-//   bottom: 0;
-// }
-
-#front{
-  z-index: 3;
+#scene{
+  position: absolute;
   bottom: 0;
 }
 
@@ -36,22 +29,37 @@ h2{
   margin-left: 5%;
 }
 
-#back{
-  z-index: 1;
-  bottom: 20;
-  margin-bottom: 10%;
-}
-
-#middle img{
-  bottom: 10;
-  margin-bottom: 20px;
+#front{
+  position: relative;
+  bottom: 210px;
+  max-height :191px;
+  margin-left: -15%;
+  height: 25%;
+  z-index: 3;
 }
 
 #middle{
   z-index: 2;
-  bottom: 10;
-  margin-bottom: 5%;
+  position: relative;
+  height: 25%;
+  max-height: 201px;
+  bottom: 240px;
 }
+
+#back{
+  position: relative;
+  z-index: -1;
+  height: 25%;
+  margin-left: -15%;
+  max-height: 211px;
+  bottom: 50px;
+}
+
+
+
+
+
+
 
 .logo{
   display: block;
