@@ -36,17 +36,32 @@
     <link rel="import" href="imports.html">
   </head>
   <body fullbleed layout vertical >
-    <core-header-panel flex class="core-narrow" mode="cover">
-      <div class="core-header tall">
-        <img class="logo"
-        src="images/codeblue-hlogo.png"
-        max-height="99" 
-        height="50%"
-        max-width="699"
-        width="50%">
+    <div class="splash-image">
+      <div class="splash-logo">
+        <img src="images/codeblue-hlogo.png" width="50%">
+        <h2>March 28, 2015</h2>
       </div>
-    </core-header-panel>
-    <div class="cloud"><img src="../images/parallax/cloud.png" alt=""></div>
+      <div class="splash-content">
+        <form target="_self" onsubmit="" action="javascript: postForm()">
+          <div class="line">
+            <input id="email" type="text" placeholder="email" autocomplete="off" />
+          </div>
+          <div class="line">
+            <button>trick or treat</button>
+          </div>
+          <h3>Fill me out to stay updated</h2>
+        </form>
+      </div>
+      <div class="sponsor-content">
+        <h2><span>Sponsor?</span> Get in touch with us at <a href="mailto:sponsors@yhack.org"><span>sponsors@yhack.org</span></a></h2>
+      </div>
+      <div class="splash-social">
+          <a href="mailto:team@yhack.org"><img src="img/mail.png" width="30" height="30" style="margin-right: 15px;"></a>
+          <a href="https://www.facebook.com/whyhackatyhack"><img src="img/facebook.png" width="30" height="30" style="margin-right: 15px;"></a>
+          <a href="https://twitter.com/YaleHack"><img src="img/twitter.png" width="30" height="30"></a>
+         </div>
+    </div>
+    <!-- <div class="cloud"><img src="../images/parallax/cloud.png" alt=""></div> -->
     <ul id="scene" data-limit-x="false" data-limit-y="false">
       <div class="waves">
         <li class="layer"
@@ -73,6 +88,36 @@
       var scene = document.getElementById('scene');
       console.log(scene);
       var parallax = new Parallax(scene); 
+  </script>
+
+  <script>
+    function validateEmail(email) { 
+      var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    }
+
+    function postForm(){
+      var email = $('#email').val();
+      if (validateEmail(email)) {
+        $.ajax({
+          url: "https://docs.google.com/a/yhack.org/forms/d/1xkHPC3Weu_xnIA8XDi1pvfeX1ALG5f_nHuFhhQXbad0/formResponse",
+          data: { "entry.447762345" : email },
+          type: "POST",
+          dataType: "xml",
+          statusCode: {
+            0: function (){
+              $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
+            },
+            200: function (){
+              $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
+            }
+          }
+        });
+      }
+      else {
+        $('#email').val("").attr("placeholder", "That's not a valid email.");
+      }
+    }
   </script>
       
 
