@@ -50,9 +50,13 @@
       <div class="waves">
         <li class="layer"
         data-depth="0.40"
-        id="back"
-        data-limit-y="100">
+        id="back">
           <img src="../images/parallax/back.png" alt="">
+        </li>
+        <li class="layer"
+        data-depth="0.80"
+        id="middle">
+          <img src="../images/parallax/middle.png" alt="">
         </li>
         <li class="layer" 
         data-depth="1.00" 
@@ -64,7 +68,7 @@
     </ul>
   <script type="text/javascript">
       var scene = document.getElementById('scene');
-      var parallax = new Parallax(scene);
+      var parallax = new Parallax(scene); 
   </script>
       
 
