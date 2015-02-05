@@ -46,17 +46,17 @@
         width="50%">
       </div>
     </core-header-panel>
-    <ul id="cloud" data-limit-y="true">
-    <div class="cloud">
-      <li class="layer" data-depth = "0.20"><img src="../images/parallax/cloud.png" alt=""></li></div>
-    </ul>
     <ul id="scene" data-limit-x="false" data-limit-y="false">
       <div class="waves">
         <li class="layer"
         data-depth="0.40"
-        id="back"
-        data-limit-y="100">
+        id="back">
           <img src="../images/parallax/back.png" alt="">
+        </li>
+        <li class="layer"
+        data-depth="0.80"
+        id="middle">
+          <img src="../images/parallax/middle.png" alt="">
         </li>
         <li class="layer" 
         data-depth="1.00" 
@@ -66,18 +66,9 @@
         <img src="../images/parallax/ship.png" alt="" id="shipImage">
       </li>
     </ul>
-    <!-- <div class="ship">
-      <ul id="ship">
-        <li class="layer" data-depth="0.80" id="shipImage">
-          <img src="../images/parallax/ship.png" alt=""></li>
-      </ul>
-    </div> -->
   <script type="text/javascript">
       var scene = document.getElementById('scene');
-      var cloud = document.getElementById('cloud');
-      console.log(scene);
       var parallax = new Parallax(scene); 
-      var cloudParallax = new Parallax(cloud);
   </script>
       
 
