@@ -103,6 +103,7 @@ ul img{
 
 .splash-logo img {
   width: 75%;
+  max-width: 700px;
 }
 
 #shipImage{
@@ -116,7 +117,8 @@ ul img{
 }
 
 .splash-content {
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
   margin: 40px auto 0 auto;
   text-align: center;
 }
@@ -174,7 +176,7 @@ button {
   border: none;
   outline: none;
   text-transform: uppercase;
-  color: rgba(252, 31, 128, .9);
+  color: rgba(37, 67, 124, .9);
   -moz-transition: all .2s ease-in;
   -ms-transition: all .2s ease-in;
   -webkit-transition: all .2s ease-in;
@@ -188,7 +190,8 @@ input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
 input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
 
 button:hover {
-  color: rgba(37, 67, 124, .9);
+  background-color: rgba(37, 67, 124, .9);
+  color: rgb(255, 255, 255);
 }
 
 .sponsor-content {
@@ -207,5 +210,25 @@ button:hover {
 }
 
 .sponsor-content span {
-  color: #FF9100;
+  color: rgb(37, 67, 124);
+}
+
+#presented {
+  padding-top: 20px;
+}
+
+#presented-by {
+    text-transform: uppercase;
+    // padding-bottom: 20px;
+}
+
+#presented-by img {
+    height: 40px;
+    width: auto;
+    padding-left: 6px;
+    margin-top: -8px;
+}
+
+.tag-emph {
+  color: rgb(53, 164, 219);
 }
