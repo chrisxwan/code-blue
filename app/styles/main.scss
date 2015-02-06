@@ -15,6 +15,7 @@ h2{
 
 ul img{
   margin-left: -15%;
+  height: 25%;
 }
 
 #scene{
@@ -31,28 +32,55 @@ ul img{
 
 #front{
   position: relative;
-  bottom: 160px;
+  bottom: 150px;
   max-height :181px;
   margin-left: -15%;
-  height: 25%;
   z-index: 3;
 }
 
-#middle{
-  z-index: 2;
+#wave1{
+  z-index: 5;
   position: relative;
-  height: 25%;
-  max-height: 201px;
-  bottom: 175px;
+  max-height: 161px;
+  bottom: 125px;
 }
 
-#back{
+#wave2{
   position: relative;
-  z-index: -1;
+  z-index: 4;
+  max-height: 171px;
+  bottom: 135px;
+}
+
+#wave3{
+  position: relative;
+  z-index: 3;
+  max-height: 181px;
+  bottom: 145px;
+}
+
+#wave4{
+  position: relative;
+  z-index: 2;
+  max-height: 191px;
+  bottom: 165px;
+}
+
+#wave5{
+  position: relative;
+  z-index: 1;
+  max-height: 201px;
+  bottom: 170px;
+  margin-left: -3%;
+}
+
+#wave6{
+  position: relative;
+  z-index: 0;
   height: 25%;
+  max-height: 221px;
+  bottom: -30px;
   margin-left: -15%;
-  max-height: 211px;
-  bottom: -20px;
 }
 
 
