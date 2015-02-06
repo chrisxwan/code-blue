@@ -49,6 +49,10 @@ ul img{
   -moz-animation: wave 8s 0.1s infinite linear;
 }
 
+#wave1:after{
+  height: 1500px;
+}
+
 #wave2{
   position: relative;
   z-index: 4;
@@ -167,3 +171,18 @@ ul img{
     transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
   }
 }
+
+@keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg);
+  }
+}
+
