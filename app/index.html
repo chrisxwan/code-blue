@@ -38,7 +38,7 @@
   <body fullbleed layout vertical >
     <div class="splash-image">
       <div class="splash-logo">
-        <img src="images/codeblue-hlogo.png" width="50%">
+        <img src="images/codeblue-hlogo.png">
         <h2>March 28, 2015</h2>
       </div>
       <div class="splash-content">
@@ -55,38 +55,36 @@
       <div class="sponsor-content">
         <h2><span>Sponsor?</span> Get in touch with us at <a href="mailto:sponsors@yhack.org"><span>sponsors@yhack.org</span></a></h2>
       </div>
-      <div class="splash-social">
+<!--       <div class="splash-social">
           <a href="mailto:team@yhack.org"><img src="img/mail.png" width="30" height="30" style="margin-right: 15px;"></a>
           <a href="https://www.facebook.com/whyhackatyhack"><img src="img/facebook.png" width="30" height="30" style="margin-right: 15px;"></a>
           <a href="https://twitter.com/YaleHack"><img src="img/twitter.png" width="30" height="30"></a>
-         </div>
+         </div> -->
     </div>
     <!-- <div class="cloud"><img src="../images/parallax/cloud.png" alt=""></div> -->
     <ul id="scene" data-limit-x="false" data-limit-y="false">
-      <div class="waves">
+      <div id="back">
         <li class="layer"
-        data-depth="0.40"
-        id="back"
-        data-limit-y="100">
+        data-depth="0.40">
           <img src="../images/parallax/back.png" alt="">
         </li>
-        <li class="layer" 
-        data-depth="1.00" 
-        id="front"><img src="../images/parallax/front.png" alt=""></li>
       </div>
-      <li class="layer" id ="ship" data-depth="0.80">
+      <div id="middle">
+        <li class="layer"
+        data-depth="0.60">
+          <img src="../images/parallax/middle.png" alt="">
+        </li>
+      </div>
+      <div id="front">
+        <li class="layer" 
+        data-depth="1.00"><img src="../images/parallax/front.png" alt=""></li>
+      </div>
+<!--       <li class="layer" id ="ship" data-depth="0.80">
         <img src="../images/parallax/ship.png" alt="" id="shipImage">
-      </li>
+      </li> -->
     </ul>
-    <!-- <div class="ship">
-      <ul id="ship">
-        <li class="layer" data-depth="0.80" id="shipImage">
-          <img src="../images/parallax/ship.png" alt=""></li>
-      </ul>
-    </div> -->
   <script type="text/javascript">
       var scene = document.getElementById('scene');
-      console.log(scene);
       var parallax = new Parallax(scene); 
   </script>
 

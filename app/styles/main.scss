@@ -13,30 +13,13 @@ h2{
   text-align: center;
 }
 
-.waves{
-  position: relative;  
-  max-height: 191px;
-  height: 25%;
+ul img{
   margin-left: -15%;
 }
 
-.cloud {
-  margin-bottom: 20%;
-  width: 200px;
-  height: 150px;
-}
-
-.cloud img{
-  width: 100%;
-  height: auto;
-}
-
 #scene{
+  position: absolute;
   bottom: 0;
-}
-
-#front{
-  z-index: 3;
 }
 
 #ship{
@@ -46,15 +29,52 @@ h2{
   margin-left: 5%;
 }
 
-#back{
-  z-index: 1;
+#front{
+  position: relative;
+  bottom: 160px;
+  max-height :181px;
+  margin-left: -15%;
+  height: 25%;
+  z-index: 3;
 }
+
+#middle{
+  z-index: 2;
+  position: relative;
+  height: 25%;
+  max-height: 201px;
+  bottom: 175px;
+}
+
+#back{
+  position: relative;
+  z-index: -1;
+  height: 25%;
+  margin-left: -15%;
+  max-height: 211px;
+  bottom: -20px;
+}
+
+
+
+.splash-image {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+
 
 .logo{
   display: block;
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
+}
+
+.splash-logo img {
+  width: 75%;
 }
 
 #shipImage{
@@ -87,9 +107,9 @@ input {
   width: 90%;
   border: none;
   outline: none;
-  background-color: rgba(256, 256, 256, .2);
+  background-color: rgba(0, 0, 0, 0.1);
   color: #FF9100;
-  color: rgba(256, 256, 256, .6);
+  color: rgba(0, 0, 0, 0.6);
   text-transform: uppercase;
 }
 
@@ -101,13 +121,13 @@ input {
 }
 
 *::-webkit-input-placeholder {
-  color: rgba(256, 256, 256, .6);
+  color: rgba(0, 0, 0, .6);
 }
 *:-moz-placeholder {
   opacity:  .6;
 }
 *::-moz-placeholder {
-  color:    rgba(256, 256, 256, .6);
+  color:    rgba(0, 0, 0, .6);
   opacity:  .6;
 }
 *:-ms-input-placeholder {
@@ -122,11 +142,11 @@ button {
   font-size: 20px;
   padding: 5px;
   width: 90%;
-  background-color: rgba(255,145,0, .3);
+  background-color: rgba(53, 164, 219, .3);
   border: none;
   outline: none;
   text-transform: uppercase;
-  color: rgba(256, 256, 256, .9);
+  color: rgba(252, 31, 128, .9);
   -moz-transition: all .2s ease-in;
   -ms-transition: all .2s ease-in;
   -webkit-transition: all .2s ease-in;
@@ -134,8 +154,13 @@ button {
   transition: all .2s ease-in;
 }
 
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* Firefox 18- */
+input:focus::-moz-placeholder { color:transparent; } /* Firefox 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* oldIE ;) */
+
 button:hover {
-  color: #FF9100;
+  color: rgba(37, 67, 124, .9);
 }
 
 .sponsor-content {
