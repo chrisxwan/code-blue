@@ -6,3 +6,4 @@ app/bower_components
 .tmp
 test/bower_components/
 app/styles/bourbon/
+app/styles/neat/
