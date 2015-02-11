@@ -6,8 +6,8 @@ body{
   background-color: #E0EEEE; 
   font-family: "Raleway", sans-serif;
   color: #333;
-  background-image: url('../images/chalk.png');
-  background-size: cover;
+  // background-image: url('../images/chalk.png');
+  // background-size: cover;
 }
 
 h1 {
@@ -111,7 +111,7 @@ ul img{
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 80px;
 }
 
 .logo{
@@ -121,8 +121,12 @@ ul img{
   margin-top: 15px;
 }
 
+.splash-logo {
+  padding-bottom: 20px;
+}
+
 .splash-logo img {
-  width: 75%;
+  width: 80%;
   max-width: 700px;
 }
 
@@ -340,7 +344,7 @@ button:hover {
 }
 
 #presented {
-  padding-top: 25px;
+  padding-top: 20px;
 }
 
 #presented-by {
