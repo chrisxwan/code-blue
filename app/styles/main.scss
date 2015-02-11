@@ -1,9 +1,6 @@
 @import "bourbon/bourbon";
-<<<<<<< HEAD
-=======
 @import "variables";
 @import "neat/neat";
->>>>>>> ebb25fab6967b099fd1755b4fe43cfaee2fee959
 
 body{
   background-color: #E0EEEE; 
@@ -109,11 +106,6 @@ ul img{
   -moz-animation: wave 8s 0.1s infinite linear;
   -ms-animation: wave 8s 0.1s infinite linear;
 }
-<<<<<<< HEAD
-
-
-=======
->>>>>>> b1798eae2840effacefe505bb4206d71ccf8b5a9
 
 .splash-image {
   width: 100%;
@@ -162,39 +154,6 @@ ul img{
   }
 }
 
-<<<<<<< HEAD
-
-
-@keyframes wave {
-  0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
-  }
-}
-
-@-webkit-keyframes wave {
-  0% {
-    -webkit-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
-    -moz-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
-    transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
-  }
-
-  100% {
-    -webkit-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
-    -moz-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
-    transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
-  }
-}
-
-=======
->>>>>>> b1798eae2840effacefe505bb4206d71ccf8b5a9
 @-moz-keyframes wave {
   0% {
     -webkit-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
@@ -368,7 +327,7 @@ button:hover {
 
 .sponsor-content h2 {
   font-size: 15px;
-  font-family: "Oxygen", Helvetica, Arial, sans-serif;
+  font-family: "Lato";
 }
 
 .sponsor-content a {
@@ -385,6 +344,7 @@ button:hover {
 }
 
 #presented-by {
+  font-family: "Lato";
   text-transform: uppercase;
 }
 
