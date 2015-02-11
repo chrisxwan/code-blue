@@ -7,7 +7,7 @@
     <title>CodeBlue</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     
-    <link rel="icon" type="image/png" href="images/codeblue-favicon.png"
+    <link rel="icon" type="image/png" href="images/codeblue-favicon.png">
 
 
     <!-- build:js bower_components/webcomponentsjs/webcomponents.min.js -->
@@ -17,6 +17,8 @@
     <!-- STELLAR -->
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/campoaia/jquery.stellar.js"></script>
+
+    <script src=" bower_components/Flowtype.js/flowtype.js"></script>
 
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 
@@ -46,7 +48,6 @@
         <h2><span class="tag-emph">200</span> Students. <span class="tag-emph">March 28</span>, 2015.</h2>
       </div>
       <h4>This is CodeBlue, a one day learnathon for high school students held at Yale.</h4>
-      <h4>No prior coding experience required.</h4>
       <div class="splash-content">
         <form target="_self" onsubmit="" action="javascript: postForm()">
           <div class="line">
@@ -79,49 +80,40 @@
         data-depth="1.00"><img src="../images/parallax/1.png" alt=""></li>
       </div>
     </ul>
-  <script type="text/javascript">
-      var scene = document.getElementById('scene');
-      var parallax = new Parallax(scene); 
-  </script>
+    <script type="text/javascript">
+        var scene = document.getElementById('scene');
+        var parallax = new Parallax(scene); 
+    </script>
 
-  <script>
-    function validateEmail(email) { 
-      var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      return re.test(email);
-    }
+    <script>
+      function validateEmail(email) { 
+        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return re.test(email);
+      }
 
-    function postForm(){
-      var email = $('#email').val();
-      if (validateEmail(email)) {
-        $.ajax({
-          url: "https://docs.google.com/a/yhack.org/forms/d/1xkHPC3Weu_xnIA8XDi1pvfeX1ALG5f_nHuFhhQXbad0/formResponse",
-          data: { "entry.447762345" : email },
-          type: "POST",
-          dataType: "xml",
-          statusCode: {
-            0: function (){
-              $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
-            },
-            200: function (){
-              $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
+      function postForm(){
+        var email = $('#email').val();
+        if (validateEmail(email)) {
+          $.ajax({
+            url: "https://docs.google.com/a/yhack.org/forms/d/1xkHPC3Weu_xnIA8XDi1pvfeX1ALG5f_nHuFhhQXbad0/formResponse",
+            data: { "entry.447762345" : email },
+            type: "POST",
+            dataType: "xml",
+            statusCode: {
+              0: function (){
+                $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
+              },
+              200: function (){
+                $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
+              }
             }
-          }
-        });
+          });
+        }
+        else {
+          $('#email').val("").attr("placeholder", "That's not a valid email.");
+        }
       }
-      else {
-        $('#email').val("").attr("placeholder", "That's not a valid email.");
-      }
-    }
-  </script>
-      
-
-    <!-- <div layout end id="footer">
-      <p>Made with 
-        <a href="https://polymer-project.org/">Polymer Project</a>
-        <core-icon icon="polymer"/>
-      </p>
-    </div> -->
-    <!-- build:js scripts/app.js -->
+    </script>    
     <script src="scripts/app.js"></script>
     <!-- endbuild-->
   </body>
