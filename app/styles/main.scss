@@ -8,6 +8,7 @@ body{
   color: #333;
   background-image: url('../images/chalk.png');
   background-size: cover;
+
 }
 
 h1 {
@@ -107,6 +108,8 @@ ul img{
   -ms-animation: wave 8s 0.1s infinite linear;
 }
 
+
+
 .splash-image {
   width: 100%;
   margin: 0 auto;
@@ -125,6 +128,22 @@ ul img{
   width: 75%;
   max-width: 700px;
 }
+
+@keyframes wave {
+  0% {
+    -webkit-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
+    -moz-transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
+    transform: rotateZ(0deg) translate3d(0,5%,0) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
+    -moz-transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
+    transform: rotateZ(360deg) translate3d(0,5%,0) rotateZ(-360deg);
+  }
+}
+
+
 
 @keyframes wave {
   0% {
@@ -327,7 +346,7 @@ button:hover {
 
 .sponsor-content h2 {
   font-size: 15px;
-  font-family: "Oxygen", Helvetica, Arial, sans-serif;
+  font-family: "Lato";
 }
 
 .sponsor-content a {
@@ -344,6 +363,7 @@ button:hover {
 }
 
 #presented-by {
+  font-family: "Lato";
   text-transform: uppercase;
 }
 
