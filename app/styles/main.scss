@@ -1,4 +1,9 @@
 @import "bourbon/bourbon";
+<<<<<<< HEAD
+=======
+@import "variables";
+@import "neat/neat";
+>>>>>>> ebb25fab6967b099fd1755b4fe43cfaee2fee959
 
 body{
   background-color: #E0EEEE; 
@@ -78,7 +83,6 @@ ul img{
 #wave5{
   position: relative;
   z-index: 1;
-  // max-height: 201px;
   bottom: 170px;
   margin-left: -3%;
 }
