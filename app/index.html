@@ -43,7 +43,7 @@
       <div class="splash-logo">
         <img src="images/codeblue-hlogo.png">
         <div id="presented">
-          <h2 id="presented-by">presented by <a href="http://www.yhack.org" target="_blank"><img src="images/YHACK_white_blue.png" /></a></h2>
+          <h2 id="presented-by">presented by <br><br><a href="http://www.yhack.org" target="_blank"><img src="images/YHACK_white_blue.png"/></a></h2>
         </div>
         <h2><span class="tag-emph">200</span> Students. <span class="tag-emph">March 28</span>, 2015.</h2>
       </div>
@@ -83,6 +83,21 @@
     <script type="text/javascript">
         var scene = document.getElementById('scene');
         var parallax = new Parallax(scene); 
+        $('h4').flowtype({
+          minimum : 500,
+          maximum : 1200,
+          minFont : 12,
+          maxFont : 20,
+          fontRatio : 30
+        });
+        $('h2').flowtype({
+          minimum : 500,
+          maximum : 1200,
+          minFont : 15,
+          maxFont : 25,
+          fontRatio : 30
+        });
+
     </script>
 
     <script>
