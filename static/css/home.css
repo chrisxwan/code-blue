@@ -304,7 +304,7 @@ button:hover {
 }
 
 #presented {
-  padding-top: 15px;
+  padding-top: 20px;
 }
 
 #presented-by {
@@ -315,7 +315,8 @@ button:hover {
 #presented-by img {
   height: 40px;
   width: auto;
-  padding-bottom: 25px;
+  padding-bottom: 40px;
+  padding-top: 8px;
 }
 
 .tag-emph {
@@ -323,6 +324,6 @@ button:hover {
 }
 
 #about-text{
-  padding-top: 25px;
-  margin-bottom: -10px;
+  padding-top: 15px;
+  /*margin-bottom: -8px;*/
 }
