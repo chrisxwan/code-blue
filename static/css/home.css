@@ -317,6 +317,7 @@ button:hover {
   width: auto;
   padding-bottom: 40px;
   padding-top: 8px;
+  margin-left: -6px;
 }
 
 .tag-emph {

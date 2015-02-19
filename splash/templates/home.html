@@ -105,9 +105,11 @@
             statusCode: {
               0: function (){
                 $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
+                $('#email').blur();
               },
               200: function (){
                 $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
+                $('#email').blur();
               }
             }
           });
