@@ -9,4 +9,5 @@ splash = Blueprint('splash', __name__, template_folder="templates")
 
 @splash.route('/')
 def index():
-    return render_template('home.html')
+	return "Under Construction"
+    # return render_template('home.html')
