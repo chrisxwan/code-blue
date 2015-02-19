@@ -85,7 +85,7 @@ ul img {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 70px;
 }
 
 .splash-logo img {
@@ -285,10 +285,11 @@ button:hover {
 
 .sponsor-content {
   text-align: center;
-  padding-top: 0px;
+  padding-top: 25px;
+  padding-bottom: 5px;
 }
 
-.sponsor-content h2 {
+.sponsor-content h3 {
   font-size: 15px;
   font-family: "Lato";
 }
@@ -314,11 +315,14 @@ button:hover {
 #presented-by img {
   height: 40px;
   width: auto;
-  padding-left: 6px;
-  margin-top: -8px;
+  padding-bottom: 25px;
 }
 
 .tag-emph {
   color: #35a4db;
 }
 
+#about-text{
+  padding-top: 25px;
+  margin-bottom: -10px;
+}

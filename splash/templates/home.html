@@ -28,7 +28,7 @@
         </div>
         <h2><span class="tag-emph">200</span> Students. <span class="tag-emph">March 28</span>, 2015.</h2>
       </div>
-      <h4>This is CodeBlue, a one day learnathon for high school students held at Yale.</h4>
+      <h4 id="about-text">This is CodeBlue, a one day learnathon for high school students, held at Yale.</h4>
       <div class="splash-content">
         <form target="_self" onsubmit="" action="javascript: postForm()">
           <div class="line">
@@ -40,7 +40,7 @@
         </form>
       </div>
       <div class="sponsor-content">
-        <h2><span>Sponsor?</span> Get in touch with us at <a href="mailto:sponsors@yhack.org"><span>sponsors@yhack.org</span></a></h2>
+        <h3><span>Sponsor?</span> Get in touch with us at <a href="mailto:sponsors@yhack.org"><span>sponsors@yhack.org</span></a></h3>
       </div>
     </div>
     <ul id="scene" data-limit-x="false" data-limit-y="false">
@@ -77,6 +77,13 @@
           minFont : 15,
           maxFont : 25,
           fontRatio : 30
+        });
+        $('h3').flowtype({
+          minimum: 500,
+          maximum: 1200,
+          minFont: 12,
+          maxFont: 15,
+          fontRatio: 30
         });
 
     </script>
