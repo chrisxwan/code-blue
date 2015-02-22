@@ -22,7 +22,7 @@ ul img {
 }
 
 #scene {
-  position: absolute;
+  position: fixed;
   bottom: -3%;
   max-width: 100%;
   max-height: 25%;
