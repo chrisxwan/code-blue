@@ -269,7 +269,7 @@ def buildVolunteerFixHTMLEmail():
                                             Hi there!                        
                                         </p>
                                         <p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:19px; margin-top:0; margin-bottom:25px; padding:0; font-weight:normal;">
-                                            It looks like there was a small problem with our form storing usernames. If you already filled, please fill it out one more time! The link is <a href="http://goo.gl/aBGb2l">here</a>.                       
+                                            It looks like there was a small problem with our form storing usernames. If you already filled out the form, please fill it out one more time! The link is <a href="http://goo.gl/aBGb2l">here</a>.                       
                                         </p>
                                         <p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:19px; margin-top:0; margin-bottom:20px; padding:0; font-weight:normal;">
                                             Thanks!
