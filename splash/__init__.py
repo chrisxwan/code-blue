@@ -23,6 +23,20 @@ def sendVolunteerEmail(email):
     status,msg = sg.send(message)
     print "Volunteer Email To: %s, Status: %s" %(email, status)
 
+def sendVolunteerFixEmail(email):
+    sg = sendgrid.SendGridClient(os.getenv('SENDGRID_USERNAME'), os.getenv('SENDGRID_PASSWORD'))
+    message = sendgrid.Mail()
+    spl = email.replace('@','.').split('.')
+    firstname = titlecase(spl[0])
+    lastname = titlecase(spl[1])
+    message.add_to('%s %s <%s>' %(firstname, lastname, email))
+    message.set_subject("""Help us run CodeBlue, YHack's high school learnathon""")
+    message.set_html(buildVolunteerFixHTMLEmail())
+    message.set_from('YHack <team@yhack.org>')
+    status,msg = sg.send(message)
+    print "Volunteer Email To: %s, Status: %s" %(email, status)
+
+
 def buildVolunteerEmailHTMLEmail():
     return """
     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -183,4 +197,116 @@ def buildVolunteerEmailTextEmail():
     The YHack Team
 
     PS: if you help us out, you'll get free meals all day, t-shirts, and other swag
+    """
+
+def buildVolunteerFixHTMLEmail():
+    return """
+    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+    <html xmlns="http://www.w3.org/1999/xhtml">
+        <head>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <title>*|MC:SUBJECT|*</title>
+            <style type="text/css">
+                #outlook a{padding:0;}
+                body{width:100% !important; background-color:#ffffff;-webkit-text-size-adjust:none; -ms-text-size-adjust:none;margin:0; padding:0;} 
+                .ReadMsgBody{width:100%;} 
+                .ExternalClass{width:100%;}
+                ol li {margin-bottom:15px;}
+                    
+                img{height:auto; line-height:100%; outline:none; text-decoration:none;}
+                #backgroundTable{height:100% !important; margin:0; padding:0; width:100% !important;}
+                    
+                p {margin: 1em 0;}
+                    
+                h1, h2, h3, h4, h5, h6 {color:#222222 !important; font-family:Arial, Helvetica, sans-serif; line-height: 100% !important;}
+                    
+                table td {border-collapse:collapse;}
+                    
+                .yshortcuts, .yshortcuts a, .yshortcuts a:link,.yshortcuts a:visited, .yshortcuts a:hover, .yshortcuts a span { color: black; text-decoration: none !important; border-bottom: none !important; background: none !important;}
+                    
+                .im {color:black;}
+                div[id="tablewrap"] {
+                        width:100%; 
+                        max-width:600px!important;
+                    }
+                table[class="fulltable"], td[class="fulltd"] {
+                        max-width:100% !important;
+                        width:100% !important;
+                        height:auto !important;
+                    }
+                            
+                @media screen and (max-device-width: 430px), screen and (max-width: 430px) { 
+                        td[class=emailcolsplit]{
+                            width:100%!important; 
+                            float:left!important;
+                            padding-left:0!important;
+                            max-width:430px !important;
+                        }
+                    td[class=emailcolsplit] img {
+                    margin-bottom:20px !important;
+                    }
+                }
+            </style>
+        </head>
+        <body style="width:100%; margin:0; padding:0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none;">
+        <table cellpadding="0" cellspacing="0" border="0" id="backgroundTable" style="height:auto !important; margin:0; padding:0; width:100% !important; color:#222222;">
+            <tr>
+                <td>
+                <div id="tablewrap" style="width:90% !important; max-width:600px !important; text-align:center; margin:0 auto; padding-bottom:5px; padding-top:15px">
+                      <table id="contenttable" width="600" align="center" cellpadding="0" cellspacing="0" border="0" style="background-color:#FFFFFF; margin:0 auto; text-align:center; border:none; width: 100% !important; max-width:600px !important;border-bottom-left-radius:5px;border-bottom-right-radius:5px">
+                    <tr>
+                        <td width="100%">
+                            <table bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <tr>
+                                    <td width="100%" bgcolor="#ffffff" style="text-align:center;"><a href="http://yhack.org"><img src="https://s3-us-west-2.amazonaws.com/yhack-static/header2.png" style="display:inline-block; max-width:100% !important; width:100% !important; height:auto !important;" border="0"></a>
+                                    </td>
+                                </tr>
+                           </table>
+                           <table bgcolor="#FFFFFF" border="0" cellspacing="0" cellpadding="25" width="100%">
+                                <tr>
+                                    <td width="100%" bgcolor="#ffffff" style="text-align:left;">
+                                        <p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:19px; margin-top:0; margin-bottom:25px; padding:0; font-weight:normal;">
+                                            Hi there!                        
+                                        </p>
+                                        <p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:19px; margin-top:0; margin-bottom:25px; padding:0; font-weight:normal;">
+                                            It looks like there was a small problem with our form storing usernames. If you already filled, please fill it out one more time! The link is <a href="http://goo.gl/aBGb2l">here</a>.                       
+                                        </p>
+                                        <p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:19px; margin-top:0; margin-bottom:20px; padding:0; font-weight:normal;">
+                                            Thanks!
+                                        </p>
+
+                                        <p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:19px; margin-top:0; margin-bottom:20px; padding:0; font-weight:normal;">
+                                            The YHack Team
+                                        </p>
+
+                                        <p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:19px; margin-top:0; margin-bottom:20px; padding:0; font-weight:normal;">
+                                            PS: if you help us out, you'll get free meals all day, t-shirts, and other swag
+                                        </p>
+
+                                        
+                                     
+                                    </td>
+                                </tr>
+                           </table>
+                           <table bgcolor="#FFFFFF" border="0" cellspacing="0" width="100%" style="border-bottom-left-radius:5px;border-bottom-right-radius:5px;">
+                                <tr>
+                                    <td width="50%" bgcolor="#ffffff" style="text-align:left;border-bottom-left-radius:5px;border-bottom-right-radius:5px;padding-right:25px;padding-bottom:10px;padding-left:25px;">
+                                        <p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; margin-top:15px; margin-bottom:0px; padding:0; font-weight:normal;">
+                                            Questions? Contact us at <a href="mailto:team@yhack.org">team@yhack.org</a>.<br>
+                                        </p>
+                                        <p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:11px; line-height:14px; margin-top:0px; margin-bottom:0px; padding:0; font-weight:normal;">
+                                            Copyright 2015 YHack. All Rights Reserved.<br>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+                </div>
+                </td>
+            </tr>
+        </table> 
+        </body>
+    </html>
     """
