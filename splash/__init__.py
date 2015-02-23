@@ -96,13 +96,12 @@ def buildVolunteerEmailHTMLEmail():
                                             On Saturday, March 28th on Yale Campus, YHack is hosting CodeBlue, a one-day boot camp for high school students to learn about exciting topics in computer science, software engineering, entrepreneurship, and design through small workshops led by undergrad and graduate students.
                                         </p>
                                         <p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:19px; margin-top:0; margin-bottom:20px; padding:0; font-weight:normal;">
-                                            We are currently looking for three types of volunteers:
+                                            We are currently looking for two types of volunteers:
                                         </p>
                                         <p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:19px; margin-top:0; margin-bottom:20px; padding:0; font-weight:normal;">
                                             <ol style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:19px; font-weight:normal;">
                                                 <li>General volunteers who will help run the logistics of the event.</li>
-                                                <li>Mentors with HTML/CSS experience who will coach small groups of high school students in web development with a curriculum we have prepared.</li>
-                                                <li>People who can teach a 30-40 minute elective about any relevant topics that interest them to high school students, such as artificial intelligence, graphic design, or mobile development.</li>
+                                                <li>Mentors with HTML/CSS/JavaScript experience who will coach small groups of high school students in web development with a curriculum we have prepared.</li>
                                             </ol>
                                         </p>
                                         <p style="color:#222222; font-family:Arial, Helvetica, sans-serif; font-size:15px; line-height:19px; margin-top:0; margin-bottom:20px; padding:0; font-weight:normal;">                                    
@@ -164,13 +163,11 @@ def buildVolunteerEmailTextEmail():
     students to learn about exciting topics in computer science, software engineering, entrepreneurship,\n
     and design through small workshops led by undergrad and graduate students.
 
-    We are currently looking for three types of volunteers: 
+    We are currently looking for two types of volunteers: 
 
     - General volunteers who will help run the logistics of the event.
-    - Mentors with HTML/CSS experience who will coach small groups of high school students in web development\n
+    - Mentors with HTML/CSS/JavaScript experience who will coach small groups of high school students in web development\n
       with a curriculum we have prepared.
-    - People who can teach a 30-40 minute elective about any relevant topics that interest them to high school\n
-      students, such as artificial intelligence, graphic design, or mobile development.
 
     We are looking for undergrad and graduate students with all types of backgrounds to help out: you do not\n
     have to have programming experience to participate! 
