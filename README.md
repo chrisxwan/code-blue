@@ -2,7 +2,7 @@
 
 High School "Learnathon" brought to you by [Y-Hack](http://www.yhack.org)
 
-![Code Blue Logo](/app/images/codeblue-vlogo.png)
+![Code Blue Logo](/static/images/codeblue-vlogo.png)
 
 ## Contributors
 
