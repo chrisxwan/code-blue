@@ -1,24 +1,24 @@
 <!doctype html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CodeBlue</title>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    
-    <link rel="icon" type="image/png" href="static/images/codeblue-favicon.png">
-    <link rel="stylesheet" href="static/css/reset.css">
-    <link rel="stylesheet" href="static/css/home.css">
-    
-    <!-- Google Fonts: Raleway, Lato, Oxygen-->
-    <link href='http://fonts.googleapis.com/css?family=Lato|Oxygen|Raleway' rel='stylesheet' type='text/css'>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeBlue</title>
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+  
+  <link rel="icon" type="image/png" href="static/images/codeblue-favicon.png">
+  <link rel="stylesheet" href="static/css/reset.css">
+  <link rel="stylesheet" href="static/css/home.css">
+  
+  <!-- Google Fonts: Raleway, Lato, Oxygen-->
+  <link href='http://fonts.googleapis.com/css?family=Lato|Oxygen|Raleway' rel='stylesheet' type='text/css'>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="static/javascript/flowtype.js"></script>
-    <script src="static/javascript/jquery.stellar.min.js"></script>
-    <script src="static/javascript/parallax.js"></script>
-    <script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="static/javascript/flowtype.js"></script>
+  <script src="static/javascript/jquery.stellar.min.js"></script>
+  <script src="static/javascript/parallax.js"></script>
+  <script>
     $(function(){
       $("#page-wrap").wrapInner("<table cellspacing='1000'><tr>");
       $(".section").wrap("<td></td>");
@@ -27,117 +27,113 @@
         event.preventDefault();
       });   
     });
-    </script>
-  </head>
-  <body fullbleed layout vertical >
-    <div id="page-wrap" style="margin-left: 25%;">
-      <div class="section" >
-        <div class="splash-image">
-          <div class="splash-logo">
-            <img src="static/images/codeblue-hlogo.png">
-            <div id="presented">
-              <h2 id="presented-by">presented by <br><a href="http://www.yhack.org" target="_blank"><img src="static/images/YHACK_white_blue.png"/></a></h2>
-            </div>
-            <h2><span class="tag-emph">200</span> Students. <span class="tag-emph">March 28</span>, 2015.</h2>
-          </div>
-          <h4 id="about-text">This is CodeBlue, a one day learnathon for high school students, held at Yale.</h4>
-          <div class="splash-content">
-            <form target="_self" onsubmit="" action="javascript: postForm()">
-              <div class="line">
-                <input id="email" type="text" placeholder="email" autocomplete="off" />
-              </div>
-              <div class="line">
-                <button>Keep me Updated</button>
-              </div>
-            </form>
-          </div>
-          <div class="sponsor-content">
-            <h3><span>Interested in Sponsoring?</span> Get in touch with us at <a href="mailto:sponsors@yhack.org"><span>sponsors@yhack.org</span></a></h3>
-          </div>
+  </script>
+</head>
+<body fullbleed layout vertical >
+<div class="splash-image">
+    <div class="splash-logo">
+        <img src="static/images/codeblue-hlogo.png">
+        <div id="presented">
+          <h2 id="presented-by">presented by <br><a href="http://www.yhack.org" target="_blank"><img src="static/images/YHACK_white_blue.png"/></a></h2>
         </div>
+        <h2><span class="tag-emph">200</span> Students. <span class="tag-emph">March 28</span>, 2015.</h2>
       </div>
-      <div class="section" style="width: 500px; height: 500px; background-color: white;"></div>
+      <h4 id="about-text">This is CodeBlue, a one day learnathon for high school students, held at Yale.</h4>
+      <div class="splash-content">
+        <form target="_self" onsubmit="" action="javascript: postForm()">
+          <div class="line">
+            <input id="email" type="text" placeholder="email" autocomplete="off" />
+          </div>
+          <div class="line">
+            <button>Keep me Updated</button>
+          </div>
+        </form>
+      </div>
+      <div class="sponsor-content">
+        <h3><span>Interested in Sponsoring?</span> Get in touch with us at <a href="mailto:sponsors@yhack.org"><span>sponsors@yhack.org</span></a></h3>
+      </div>
     </div>
+  </div>
 
 
-    <ul id="scene" data-limit-x="false" data-limit-y="false">
-      <div id="wave3">
-        <li class="layer"
-        data-depth="0.60">
-          <img src="static/images/parallax/3.png" alt="">
-        </li>
-      </div>
-      <div id="wave2">
-        <li class="layer"
-        data-depth="0.80">
-          <img src="static/images/parallax/2.png" alt="">
-        </li>
-      </div>
-      <div id="wave1">
-        <li class="layer" 
-        data-depth="1.00"><img src="static/images/parallax/1.png" alt=""></li>
-      </div>
-    </ul>
-    <script type="text/javascript">
-        var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene); 
-        $('h4').flowtype({
-          minimum : 500,
-          maximum : 1200,
-          minFont : 12,
-          maxFont : 20,
-          fontRatio : 30
-        });
-        $('h2').flowtype({
-          minimum : 500,
-          maximum : 1200,
-          minFont : 15,
-          maxFont : 25,
-          fontRatio : 30
-        });
-        $('h3').flowtype({
-          minimum: 500,
-          maximum: 1200,
-          minFont: 12,
-          maxFont: 15,
-          fontRatio: 30
-        });
+<ul id="scene" data-limit-x="false" data-limit-y="false">
+  <div id="wave3">
+    <li class="layer"
+    data-depth="0.60">
+    <img src="static/images/parallax/3.png" alt="">
+  </li>
+</div>
+<div id="wave2">
+  <li class="layer"
+  data-depth="0.80">
+  <img src="static/images/parallax/2.png" alt="">
+</li>
+</div>
+<div id="wave1">
+  <li class="layer" 
+  data-depth="1.00"><img src="static/images/parallax/1.png" alt=""></li>
+</div>
+</ul>
+<script type="text/javascript">
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene); 
+  $('h4').flowtype({
+    minimum : 500,
+    maximum : 1200,
+    minFont : 12,
+    maxFont : 20,
+    fontRatio : 30
+  });
+  $('h2').flowtype({
+    minimum : 500,
+    maximum : 1200,
+    minFont : 15,
+    maxFont : 25,
+    fontRatio : 30
+  });
+  $('h3').flowtype({
+    minimum: 500,
+    maximum: 1200,
+    minFont: 12,
+    maxFont: 15,
+    fontRatio: 30
+  });
 
-    </script>
+</script>
 
-    <script>
-      function validateEmail(email) { 
-        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(email);
-      }
+<script>
+  function validateEmail(email) { 
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
 
-      function postForm(){
-        var email = $('#email').val();
-        if (validateEmail(email)) {
-          $.ajax({
-            url: "https://docs.google.com/a/yhack.org/forms/d/1xkHPC3Weu_xnIA8XDi1pvfeX1ALG5f_nHuFhhQXbad0/formResponse",
-            data: { "entry.447762345" : email },
-            type: "POST",
-            dataType: "xml",
-            statusCode: {
-              0: function (){
-                $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
-                $('#email').blur();
-              },
-              200: function (){
-                $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
-                $('#email').blur();
-              }
-            }
-          });
+  function postForm(){
+    var email = $('#email').val();
+    if (validateEmail(email)) {
+      $.ajax({
+        url: "https://docs.google.com/a/yhack.org/forms/d/1xkHPC3Weu_xnIA8XDi1pvfeX1ALG5f_nHuFhhQXbad0/formResponse",
+        data: { "entry.447762345" : email },
+        type: "POST",
+        dataType: "xml",
+        statusCode: {
+          0: function (){
+            $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
+            $('#email').blur();
+          },
+          200: function (){
+            $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
+            $('#email').blur();
+          }
         }
-        else {
-          $('#email').val("").attr("placeholder", "That's not a valid email.");
-          $('#email').blur();
-        }
-      }
-    </script>    
-    <script src="static/javascript/home.js"></script>
-    <!-- endbuild-->
-  </body>
+      });
+    }
+    else {
+      $('#email').val("").attr("placeholder", "That's not a valid email.");
+      $('#email').blur();
+    }
+  }
+</script>    
+<script src="static/javascript/home.js"></script>
+<!-- endbuild-->
+</body>
 </html>
