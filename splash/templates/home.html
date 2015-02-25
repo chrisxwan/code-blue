@@ -34,11 +34,11 @@
           <div class="splash-content">
             <form target="_self" onsubmit="" action="javascript: postForm()">
               <div class="line">
-                <input id="email" type="text" placeholder="email" autocomplete="off" />
+                <button class="button" id="student">Student Registration</button>
               </div>
-              <div class="line">
-                <button>Keep me Updated</button>
-              </div>
+              <!-- <div class="line">
+                <button class="button" id="mentor">Mentor Registration</button>
+              </div> -->
             </form>
           </div>
           <div class="sponsor-content">
@@ -82,6 +82,13 @@
 <script>
   $(document).ready(function() {
     $('#fullpage').fullpage();
+    $('#student').click(function() {
+      window.location= "/students";
+    });
+    $('#mentor').click(function() {
+      window.location= "/mentors";
+    });
+
   });
   var scene = document.getElementById('scene');
   var parallax = new Parallax(scene); 

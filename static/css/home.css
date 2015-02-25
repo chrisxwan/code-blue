@@ -7,7 +7,10 @@ body {
   width: 100%;
   overflow: auto;
 }
-
+button a:hover{
+  text-decoration: none;
+  color:white;
+}
 h1 {
   font-family: "Lato";
   font-size: 60px;
@@ -23,6 +26,11 @@ ul img {
 
 .fp-controlArrow {
   width: 8%;
+}
+
+.button{
+  border-radius: 5px;
+  margin: 5px;
 }
 
 #scene {

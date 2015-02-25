@@ -43,6 +43,22 @@ ul img {
   text-align: center;
 }
 
+#title{
+  padding-bottom: 0.8em;
+}
+
+#gender{
+  padding: 0.8em 0 1.3em 0;
+}
+
+#emergency{
+  padding-bottom: 0.6em;
+}
+
+#spacing {
+  padding-bottom: 1.3em;
+}
+
 input {
   font-family: "Oxygen", Helvetica, Arial, sans-serif;
   margin: 0 auto 10px auto;
