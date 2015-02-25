@@ -21,6 +21,10 @@ ul img {
   margin-left: -15%;
 }
 
+.fp-controlArrow {
+  width: 8%;
+}
+
 #scene {
   position: fixed;
   bottom: -3%;
