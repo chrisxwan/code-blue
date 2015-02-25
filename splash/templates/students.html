@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CodeBlue - Student Registration</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    
+    <link rel="icon" type="image/png" href="static/images/codeblue-favicon.png">
+    <link rel="stylesheet" href="static/css/reset.css">
+    <link rel="stylesheet" href="static/css/applications.css">
+    
+    <!-- Google Fonts: Raleway, Lato, Oxygen-->
+    <link href='http://fonts.googleapis.com/css?family=Lato|Oxygen|Raleway' rel='stylesheet' type='text/css'>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="form-content">
+      <form method="POST" action="/students">
+        <div class="line" id="title">
+          <h2>Student Information</h2>
+        </div>
+        <div class="line">
+          <input id="name" name="name" type="text" placeholder="full name" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="email" name="email" type="text" placeholder="email" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="year" name="year" type="text" placeholder="graduation year" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="school" name="school" type="text" placeholder="school" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="city" name="city" type="text" placeholder="city" autocomplete="off" />
+        </div>
+
+        <div class="line" id="gender">
+          <h2>Gender</h2>
+          <select id="gender" name="gender" placeholder="gender">
+            <option></option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+            <option value="other">other</option>
+          </select>
+        </div>
+
+        <h2 id="emergency">Emergency Contact</h2>
+        <div class="line">
+          <input id="emergency_name" name="emergency_name" type="text" placeholder="name" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="emergency_number" name="emergency_number" type="text" placeholder="number" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="emergency_email" name="emergency_email" type="text" placeholder="email" autocomplete="off" />
+        </div>
+        <div class="line" id="spacing">
+          <input id="emergency_relationship" name="emergency_relationship" type="text" placeholder="relationship to student" autocomplete="off" />
+        </div>
+
+        <h2 id="emergency" style="width: 95%; margin-left: auto; margin-right: auto;">Have you programmed before? Absolutely no programming skills are required, but if you have prior experience, please rate on a scale of 1-5 (5 meaning proficiency) how well you know each of the following skills:</h2>
+        <div class="line" >
+          <input id="html" name="html" type="text" placeholder="html" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="css" name="css" type="text" placeholder="css" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="javascript" name="javascript" type="text" placeholder="javascript" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="meteor" name="meteor" type="text" placeholder="meteor" autocomplete="off" />
+        </div>
+
+        <div class="line">
+          <button style="margin-bottom: 1.0em;">Apply</button>
+        </div>
+      </form>
+    </div>
+    <!-- endbuild-->
+  </body>
+</html>
