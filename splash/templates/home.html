@@ -36,9 +36,9 @@
               <div class="line">
                 <button class="button" id="student">Student Registration</button>
               </div>
-              <!-- <div class="line">
+              <div class="line">
                 <button class="button" id="mentor">Mentor Registration</button>
-              </div> -->
+              </div>
             </form>
           </div>
           <div class="sponsor-content">
@@ -122,19 +122,15 @@
 <script>
   $(document).ready(function() {
     $('#fullpage').fullpage();
-<<<<<<< HEAD
     var msnry = new Masonry( "#container", {
       isFitWidth: true
     });
-=======
     $('#student').click(function() {
       window.location= "/students";
     });
     $('#mentor').click(function() {
       window.location= "/mentors";
     });
-
->>>>>>> applications
   });
   var scene = document.getElementById('scene');
   var parallax = new Parallax(scene); 
