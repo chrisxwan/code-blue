@@ -21,8 +21,12 @@ ul img {
   margin-left: -15%;
 }
 
+.fp-controlArrow {
+  width: 8%;
+}
+
 #scene {
-  position: absolute;
+  position: fixed;
   bottom: -3%;
   max-width: 100%;
   max-height: 25%;
@@ -85,12 +89,15 @@ ul img {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 70px;
 }
 
 .splash-logo img {
   width: 75%;
   max-width: 700px;
+}
+
+.slide {
+  margin-top: -2%;
 }
 
 @keyframes wave {

@@ -9,3 +9,8 @@ dist
 _mailinglist
 .tox
 node_modules
+app/styles/bourbon
+app/styles/neat
+app/bower_components
+.tmp
+.sass-cache
