@@ -19,14 +19,9 @@
   <script src="static/javascript/jquery.stellar.min.js"></script>
   <script src="static/javascript/parallax.js"></script>
   <script>
-    $(function(){
-      $("#page-wrap").wrapInner("<table cellspacing='1000'><tr>");
-      $(".section").wrap("<td></td>");
-      $("body").mousewheel(function(event, delta) {
-        this.scrollLeft -= (delta * 30);
-        event.preventDefault();
-      });   
-    });
+  $(document).ready(function() {
+    $('#fullpage').fullpage();
+  });
   </script>
 </head>
 <body fullbleed layout vertical >
