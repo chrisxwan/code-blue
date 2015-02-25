@@ -1,5 +1,6 @@
 .DS_Store
 *.pyc
+splash/*.pyc
 *.pyo
 env
 env*
@@ -9,3 +10,11 @@ dist
 _mailinglist
 .tox
 node_modules
+<<<<<<< HEAD
+=======
+app/styles/bourbon
+app/styles/neat
+app/bower_components
+.tmp
+.sass-cache
+>>>>>>> scrolling

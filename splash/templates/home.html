@@ -1,126 +1,188 @@
 <!doctype html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CodeBlue</title>
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    
-    <link rel="icon" type="image/png" href="static/images/codeblue-favicon.png">
-    <link rel="stylesheet" href="static/css/reset.css">
-    <link rel="stylesheet" href="static/css/home.css">
-    
-    <!-- Google Fonts: Raleway, Lato, Oxygen-->
-    <link href='http://fonts.googleapis.com/css?family=Lato|Oxygen|Raleway' rel='stylesheet' type='text/css'>
+<head>
+  <meta charset="utf-8">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CodeBlue</title>
+  <link rel="icon" type="image/png" href="static/images/codeblue-favicon.png">
+  <link rel="stylesheet" href="static/css/reset.css">
+  <link rel="stylesheet" href="static/css/jquery.fullPage.css">
+  <link rel="stylesheet" href="static/css/home.css">
+  
+  <!-- Google Fonts: Raleway, Lato, Oxygen -->
+  <link href='http://fonts.googleapis.com/css?family=Lato|Oxygen|Raleway' rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js"></script>
+  <script src="static/javascript/flowtype.js"></script>  
+  <script src="static/javascript/jquery.fullPage.min.js"></script>
+</head>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="static/javascript/flowtype.js"></script>
-    <script src="static/javascript/jquery.stellar.min.js"></script>
-    <script src="static/javascript/parallax.js"></script>
-  </head>
-  <body fullbleed layout vertical >
-    <div class="splash-image">
-      <div class="splash-logo">
-        <img src="static/images/codeblue-hlogo.png">
-        <div id="presented">
-          <h2 id="presented-by">presented by <br><a href="http://www.yhack.org" target="_blank"><img src="static/images/YHACK_white_blue.png"/></a></h2>
+<body>
+  <div id="fullpage">
+    <div class="section">
+      <div class="slide">      
+        <div class="splash-image">
+          <div class="splash-logo">
+            <img src="static/images/codeblue-hlogo.png">
+            <div id="presented">
+              <h2 id="presented-by">presented by <br><a href="http://www.yhack.org" target="_blank"><img src="static/images/YHACK_white_blue.png"/></a></h2>
+            </div>
+            <h2><span class="tag-emph">200</span> Students. <span class="tag-emph">March 28</span>, 2015.</h2>
+          </div>
+          <h4 id="about-text">This is CodeBlue, a one day learnathon for high school students, held at Yale.</h4>
+          <div class="splash-content">
+            <form target="_self" onsubmit="" action="javascript: postForm()">
+              <div class="line">
+                <input id="email" type="text" placeholder="email" autocomplete="off" />
+              </div>
+              <div class="line">
+                <button>Keep me Updated</button>
+              </div>
+            </form>
+          </div>
+          <div class="sponsor-content">
+            <h3><span>Interested in Sponsoring?</span> Get in touch with us at <a href="mailto:sponsors@yhack.org"><span>sponsors@yhack.org</span></a></h3>
+          </div>
         </div>
-        <h2><span class="tag-emph">200</span> Students. <span class="tag-emph">March 28</span>, 2015.</h2>
       </div>
-      <h4 id="about-text">This is CodeBlue, a one day learnathon for high school students, held at Yale.</h4>
-      <div class="splash-content">
-        <form target="_self" onsubmit="" action="javascript: postForm()">
-          <div class="line">
-            <input id="email" type="text" placeholder="email" autocomplete="off" />
+      <div class="slide">
+        <div style="text-align: center; margin-bottom: 10px;"><img src="/static/images/faq-header.png" height="40px" alt="F.A.Q."></div>
+        <div id="container">
+          <div class="item">
+            <b>When and where will CodeBlue take place?</b><br><br>
+            <p>CodeBlue 2015 will take place on Saturday, March 28, 2015. The program will run from morning until late afternoon. A more detailed schedule will be released closer to the actual event, and it will be held at Yale’s School of Management Building AKA Evans Hall.
+            </p>
           </div>
-          <div class="line">
-            <button>Keep me Updated</button>
+          <div class="item">
+            <b>Who can attend?</b><br><br>
+            <p>Any high school student is eligible to attend! We are specifically reaching out to New Haven and other local communities, but all students are encouraged to apply, including both students with and without programming experience.</p>
           </div>
-        </form>
-      </div>
-      <div class="sponsor-content">
-        <h3><span>Interested in Sponsoring?</span> Get in touch with us at <a href="mailto:sponsors@yhack.org"><span>sponsors@yhack.org</span></a></h3>
+          <div class="item">
+            <b>Do I need programming experience?</b><br><br>
+            <p>Not at all! In fact, the goal of CodeBlue is to expose students who have not had programming experience before to learn about computer science and software technology, so if you don’t have experience, you’re a perfect fit for our program. That being said, students who have had some programming experience will also find plenty to do and learn during the day!</p>
+          </div>
+          <div class="item">
+            <b>But what if I’m not a high school student?</b><br><br>
+            <p>We’re also looking for volunteers for the day of the event and to run workshops or give talks. We will be reaching out to mentors, but anyone who is interested in running workshops is strongly encouraged to email team@yhack.org with a description of your programming experience. Volunteers should sign up on the site! All involved should sign up for the CodeBlue Panlist to stay informed.</p>            
+          </div>
+          <div class="item">
+            <b>Will travel be reimbursed?</b><br><br>
+            <p>We anticipate that most students will be from nearby, but accommodations will be made for accepted students who live far away. If you are traveling a significant distance, or if travel costs are a concern, definitely let us know by emailing team@yhack.org and we will make accommodations!</p>
+          </div>
+          <div class="item">
+            <b>Is CodeBlue open for parents as well?</b><br><br>
+            <p>Though the workshops will be for students only, parents are welcome to attend speakers, opening and closing ceremonies! We want you to be confident in what your children are learning and as excited as they are about the field!</p>
+          </div>
+          <div class="item">
+            <b>How much does it cost to attend?</b><br><br>
+            <p>Not only is CodeBlue completely free, but we will provide lunch as well!</p>
+          </div>
+          <div class="item">
+            <b>When is the deadline to register?</b><br><br>
+            <p>March 21st by 11:59pm! Register now!</p>
+          </div>
+          <div class="item">
+            <b>What should I bring?</b><br><br>
+            <p>A laptop and your creativity! If you cannot bring a laptop, feel free to let us know and we will try our best to make accommodations!</p>
+          </div>
+          <div class="item">
+            <b>Will you provide food?</b><br><br>
+            <p>YHack will provide breakfast, lunch and snacks during the event.</p>
+          </div>
+          <div class="item">
+            <b>Other Questions</b><br><br>
+            <p>If there is anything else you are wondering about, please feel free to contact us at team@yhack.org. We are looking forward to seeing you on campus in March!</p>
+          </div>
+        </div>
       </div>
     </div>
-    <ul id="scene" data-limit-x="false" data-limit-y="false">
-      <div id="wave3">
-        <li class="layer"
-        data-depth="0.60">
-          <img src="static/images/parallax/3.png" alt="">
-        </li>
-      </div>
-      <div id="wave2">
-        <li class="layer"
-        data-depth="0.80">
-          <img src="static/images/parallax/2.png" alt="">
-        </li>
-      </div>
-      <div id="wave1">
-        <li class="layer" 
-        data-depth="1.00"><img src="static/images/parallax/1.png" alt=""></li>
-      </div>
-    </ul>
-    <script type="text/javascript">
-        var scene = document.getElementById('scene');
-        var parallax = new Parallax(scene); 
-        $('h4').flowtype({
-          minimum : 500,
-          maximum : 1200,
-          minFont : 12,
-          maxFont : 20,
-          fontRatio : 30
-        });
-        $('h2').flowtype({
-          minimum : 500,
-          maximum : 1200,
-          minFont : 15,
-          maxFont : 25,
-          fontRatio : 30
-        });
-        $('h3').flowtype({
-          minimum: 500,
-          maximum: 1200,
-          minFont: 12,
-          maxFont: 15,
-          fontRatio: 30
-        });
+  </div>
 
-    </script>
 
-    <script>
-      function validateEmail(email) { 
-        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(email);
-      }
+<ul id="scene" data-limit-x="false" data-limit-y="false">
+  <div id="wave3">
+    <li class="layer" data-depth="0.60">
+      <img src="static/images/parallax/3.png" alt="">
+    </li>
+  </div>
+  <div id="wave2">
+    <li class="layer" data-depth="0.80">
+      <img src="static/images/parallax/2.png" alt="">
+    </li>
+  </div>
+  <div id="wave1">
+    <li class="layer" data-depth="1.00">
+      <img src="static/images/parallax/1.png" alt="">
+    </li>
+  </div>
+</ul>
 
-      function postForm(){
-        var email = $('#email').val();
-        if (validateEmail(email)) {
-          $.ajax({
-            url: "https://docs.google.com/a/yhack.org/forms/d/1xkHPC3Weu_xnIA8XDi1pvfeX1ALG5f_nHuFhhQXbad0/formResponse",
-            data: { "entry.447762345" : email },
-            type: "POST",
-            dataType: "xml",
-            statusCode: {
-              0: function (){
-                $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
-                $('#email').blur();
-              },
-              200: function (){
-                $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
-                $('#email').blur();
-              }
-            }
-          });
+<script src="static/javascript/parallax.js"></script> 
+<script>
+  $(document).ready(function() {
+    $('#fullpage').fullpage();
+    var msnry = new Masonry( "#container", {
+      isFitWidth: true
+    });
+  });
+  var scene = document.getElementById('scene');
+  var parallax = new Parallax(scene); 
+  $('h4').flowtype({
+    minimum : 500,
+    maximum : 1200,
+    minFont : 12,
+    maxFont : 20,
+    fontRatio : 30
+  });
+  $('h2').flowtype({
+    minimum : 500,
+    maximum : 1200,
+    minFont : 15,
+    maxFont : 25,
+    fontRatio : 30
+  });
+  $('h3').flowtype({
+    minimum: 500,
+    maximum: 1200,
+    minFont: 12,
+    maxFont: 15,
+    fontRatio: 30
+  });
+</script>
+
+<script>
+  function validateEmail(email) { 
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
+  }
+
+  function postForm(){
+    var email = $('#email').val();
+    if (validateEmail(email)) {
+      $.ajax({
+        url: "https://docs.google.com/a/yhack.org/forms/d/1xkHPC3Weu_xnIA8XDi1pvfeX1ALG5f_nHuFhhQXbad0/formResponse",
+        data: { "entry.447762345" : email },
+        type: "POST",
+        dataType: "xml",
+        statusCode: {
+          0: function (){
+            $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
+            $('#email').blur();
+          },
+          200: function (){
+            $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
+            $('#email').blur();
+          }
         }
-        else {
-          $('#email').val("").attr("placeholder", "That's not a valid email.");
-          $('#email').blur();
-        }
-      }
-    </script>    
-    <script src="static/javascript/home.js"></script>
-    <!-- endbuild-->
-  </body>
+      });
+    }
+    else {
+      $('#email').val("").attr("placeholder", "That's not a valid email.");
+      $('#email').blur();
+    }
+  }
+</script>    
+<!-- endbuild-->
+</body>
 </html>
