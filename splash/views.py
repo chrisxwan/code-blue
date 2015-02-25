@@ -3,6 +3,7 @@ from flask import (Flask, render_template, Response, request,
 from flask.ext.login import login_user, logout_user, current_user, login_required
 from splash import *
 from main import app, db
+import requests
 
 splash = Blueprint('splash', __name__, template_folder="templates")
 
@@ -18,6 +19,7 @@ def mentors():
 
   # POST to Google
   print request.form
+  url = ""
   return redirect(url_for('splash.index'))
 
 @splash.route('/students', methods=['GET', 'POST'])
@@ -26,5 +28,23 @@ def students():
       return render_template('students.html')
 
   # POST to Google
-  print request.form
+  url = "https://docs.google.com/a/yale.edu/forms/d/1G_OpW-8__XR7Chtw-zg8knHSinYr_9uGPAlzQLBBo3Q/formResponse"
+  payload = {
+    "entry_1936930932" : request.form['name'],
+    "entry_1213247573" : request.form['email'],
+    "entry_1286191822" : request.form['year'],
+    "entry_1595147491" : request.form['school'],
+    "entry_369883752"  : request.form['city'],
+    "entry_286764877"  : request.form['emergency_name'],
+    "entry_2012747492" : request.form['emergency_number'],
+    "entry_1547565125" : request.form['emergency_email'],
+    "entry_929537745"  : request.form['emergency_relationship'],
+    "entry_1041567284" : request.form['html'],
+    "entry_1999826878" : request.form['css'],
+    "entry_915431056"  : request.form['javascript'],
+    "entry_440391179"  : request.form['meteor'],
+    "entry_122881673"  : request.form['gender']
+  }
+  r = requests.post(url, data=payload)
+
   return redirect(url_for('splash.index'))
