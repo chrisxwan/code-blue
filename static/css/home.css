@@ -30,11 +30,17 @@ ul img {
 }
 
 .item {
-  max-width: 225px;
+  max-width: 207px;
   padding-top: 10px;
   padding-right: 12px;
   padding-left: 12px;
   padding-bottom: 10px;
+  background-color: white;
+  border-radius: 3px;
+  margin-top: 40px;
+  margin-right: 5px;
+  margin-left: 5px;
+  box-shadow: 1px 2px 3px black;
 }
 
 #container {
