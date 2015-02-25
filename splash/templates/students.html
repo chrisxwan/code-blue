@@ -78,39 +78,6 @@
         </div>
       </form>
     </div>
-
-    <script>
-      function validateEmail(email) { 
-        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(email);
-      }
-
-      function postForm(){
-        var email = $('#email').val();
-        if (validateEmail(email)) {
-          $.ajax({
-            url: "https://docs.google.com/a/yhack.org/forms/d/1xkHPC3Weu_xnIA8XDi1pvfeX1ALG5f_nHuFhhQXbad0/formResponse",
-            data: { "entry.447762345" : email },
-            type: "POST",
-            dataType: "xml",
-            statusCode: {
-              0: function (){
-                $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
-                $('#email').blur();
-              },
-              200: function (){
-                $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
-                $('#email').blur();
-              }
-            }
-          });
-        }
-        else {
-          $('#email').val("").attr("placeholder", "That's not a valid email.");
-          $('#email').blur();
-        }
-      }
-    </script>
     <!-- endbuild-->
   </body>
 </html>
