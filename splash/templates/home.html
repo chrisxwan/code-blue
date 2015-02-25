@@ -122,6 +122,9 @@
 <script>
   $(document).ready(function() {
     $('#fullpage').fullpage();
+    var msnry = new Masonry( "#container", {
+      isFitWidth: true
+    });
   });
   var scene = document.getElementById('scene');
   var parallax = new Parallax(scene); 
@@ -146,11 +149,6 @@
     maxFont: 15,
     fontRatio: 30
   });
-  var msnry = new Masonry( "#container", {
-    isFitWidth: true,
-    itemSelector: '.item'
-  });
-
 </script>
 
 <script>
