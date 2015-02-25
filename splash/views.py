@@ -10,3 +10,21 @@ splash = Blueprint('splash', __name__, template_folder="templates")
 @splash.route('/')
 def index():
     return render_template('home.html')
+
+@splash.route('/mentors', methods=['GET', 'POST'])
+def mentors():
+  if request.method == 'GET':
+      return render_template('mentors.html')
+
+  # POST to Google
+  print request.form
+  return redirect(url_for('splash.index'))
+
+@splash.route('/students', methods=['GET', 'POST'])
+def students():
+  if request.method == 'GET':
+      return render_template('students.html')
+
+  # POST to Google
+  print request.form
+  return redirect(url_for('splash.index'))
