@@ -9,73 +9,51 @@
     
     <link rel="icon" type="image/png" href="static/images/codeblue-favicon.png">
     <link rel="stylesheet" href="static/css/reset.css">
-    <link rel="stylesheet" href="static/css/home.css">
+    <link rel="stylesheet" href="static/css/applications.css">
     
     <!-- Google Fonts: Raleway, Lato, Oxygen-->
     <link href='http://fonts.googleapis.com/css?family=Lato|Oxygen|Raleway' rel='stylesheet' type='text/css'>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="static/javascript/flowtype.js"></script>
-    <script src="static/javascript/jquery.stellar.min.js"></script>
-    <script src="static/javascript/parallax.js"></script>
   </head>
-  <body fullbleed layout vertical >
-    <div class="splash-image">
-      <div class="splash-logo">
-        <img src="static/images/codeblue-hlogo.png">
-        <div id="presented">
-          <h2 id="presented-by">presented by <br><a href="http://www.yhack.org" target="_blank"><img src="static/images/YHACK_white_blue.png"/></a></h2>
+  <body>
+    <div class="form-content">
+      <form method="POST" action="/mentors">
+        <div class="line">
+          <input id="name" name="name" type="text" placeholder="full name" autocomplete="off" />
         </div>
-        <h2><span class="tag-emph">200</span> Students. <span class="tag-emph">March 28</span>, 2015.</h2>
-      </div>
-      <h4 id="about-text">This is CodeBlue, a one day learnathon for high school students, held at Yale.</h4>
-      <div class="splash-content">
-        <form target="_self" onsubmit="" action="javascript: postForm()">
-          <div class="line">
-            <input id="email" type="text" placeholder="email" autocomplete="off" />
-          </div>
-          <div class="line">
-            <button>Keep me Updated</button>
-          </div>
-        </form>
-      </div>
-      <div class="sponsor-content">
-        <h3><span>Interested in Sponsoring?</span> Get in touch with us at <a href="mailto:sponsors@yhack.org"><span>sponsors@yhack.org</span></a></h3>
-      </div>
+        <div class="line">
+          <input id="email" name="email" type="text" placeholder="email" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="phone" name="phone" type="text" placeholder="phone number" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="school" name="school" type="text" placeholder="school" autocomplete="off" />
+        </div>
+
+        <h2>What would you like to teach?</h2>
+        <div class="line">
+          <input id="html" name="html" type="text" placeholder="html" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="css" name="css" type="text" placeholder="css" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="javascript" name="javascript" type="text" placeholder="javascript" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="meteor" name="meteor" type="text" placeholder="meteor" autocomplete="off" />
+        </div>
+        <div class="line">
+          <input id="entrepreneurship" name="entrepreneurship" type="text" placeholder="entrepreneurship" autocomplete="off" />
+        </div>
+
+        <div class="line">
+          <button>Apply</button>
+        </div>
+      </form>
     </div>
-
-    <script>
-      function validateEmail(email) { 
-        var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return re.test(email);
-      }
-
-      function postForm(){
-        var email = $('#email').val();
-        if (validateEmail(email)) {
-          $.ajax({
-            url: "https://docs.google.com/a/yhack.org/forms/d/1xkHPC3Weu_xnIA8XDi1pvfeX1ALG5f_nHuFhhQXbad0/formResponse",
-            data: { "entry.447762345" : email },
-            type: "POST",
-            dataType: "xml",
-            statusCode: {
-              0: function (){
-                $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
-                $('#email').blur();
-              },
-              200: function (){
-                $('#email').val("").attr("placeholder", "Thanks! We'll be in touch.");
-                $('#email').blur();
-              }
-            }
-          });
-        }
-        else {
-          $('#email').val("").attr("placeholder", "That's not a valid email.");
-          $('#email').blur();
-        }
-      }
-    </script>
     <!-- endbuild-->
   </body>
 </html>
