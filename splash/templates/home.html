@@ -8,18 +8,19 @@
   <link rel="icon" type="image/png" href="static/images/codeblue-favicon.png">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="static/css/reset.css">
-  <link rel="stylesheet" href="static/css/home.css">
   <link rel="stylesheet" href="static/css/jquery.fullPage.css">
+  <link rel="stylesheet" href="static/css/home.css">
   
   <!-- Google Fonts: Raleway, Lato, Oxygen -->
   <link href='http://fonts.googleapis.com/css?family=Lato|Oxygen|Raleway' rel='stylesheet' type='text/css'>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js"></script>
   <script src="static/javascript/flowtype.js"></script>  
   <script src="static/javascript/jquery.fullPage.min.js"></script>
 </head>
 
 <body>
-  <div id="fullpage" margin-top="0">
+  <div id="fullpage">
     <div class="section">
       <div class="slide">      
         <div class="splash-image">
@@ -47,12 +48,41 @@
         </div>
       </div>
       <div class="slide">
-        <div class="row">
-          <div class="col-md-3">
-            <p>Block</p>
+        <div id="container">
+          <div class="item">
+            <p>Locavore jean shorts raw denim, umami occupy seitan Truffaut Blue Bottle beard. Kogi Echo Park crucifix Carles cray, Tumblr 8-bit. Craft beer slow-carb direct trade, synth kogi small batch single-origin coffee beard. Cred four loko heirloom cliche Godard Shoreditch messenger bag direct trade, forage seitan narwhal Marfa dreamcatcher Portland. Tattooed craft beer drinking vinegar selvage iPhone deep v. Marfa pickled seitan, shabby chic Carles flexitarian stumptown disrupt jean shorts small batch artisan. Vice gentrify Godard, banjo freegan messenger bag butcher migas Marfa shabby chic pickled.
+            </p>
+            <br>
           </div>
-          <div class="col-md-3">
-            <p>Block</p>
+          <div class="item">
+            <p>Locavore jean shorts raw denim, umami occupy seitan Truffaut Blue Bottle beard. Kogi Echo Park crucifix Carles cray, Tumblr 8-bit. Craft beer slow-carb direct trade, synth kogi small batch single-origin coffee beard. Cred four loko heirloom cliche Godard Shoreditch messenger bag direct trade, forage seitan narwhal Marfa dreamcatcher Portland. Tattooed craft beer drinking vinegar selvage iPhone deep v. Marfa pickled seitan, shabby chic Carles flexitarian stumptown disrupt jean shorts small batch artisan. Vice gentrify Godard, banjo freegan messenger bag butcher migas Marfa shabby chic pickled.
+            </p>
+            <br>
+          </div>
+          <div class="item">
+            <p>Locavore jean shorts raw denim, umami occupy seitan Truffaut Blue Bottle beard. Kogi Echo Park crucifix Carles cray, Tumblr 8-bit. Craft beer slow-carb direct trade, synth kogi small batch single-origin coffee beard. Cred four loko heirloom cliche Godard Shoreditch messenger bag direct trade, forage seitan narwhal Marfa dreamcatcher Portland. Tattooed craft beer drinking vinegar selvage iPhone deep v. Marfa pickled seitan, shabby chic Carles flexitarian stumptown disrupt jean shorts small batch artisan. Vice gentrify Godard, banjo freegan messenger bag butcher migas Marfa shabby chic pickled.
+            </p>
+            <br>
+          </div>
+          <div class="item">
+            <p>Locavore jean shorts raw denim, umami occupy seitan Truffaut Blue Bottle beard. Kogi Echo Park crucifix Carles cray, Tumblr 8-bit. Craft beer slow-carb direct trade, synth kogi small batch single-origin coffee beard. Cred four loko heirloom cliche Godard Shoreditch messenger bag direct trade, forage seitan narwhal Marfa dreamcatcher Portland. Tattooed craft beer drinking vinegar selvage iPhone deep v. Marfa pickled seitan, shabby chic Carles flexitarian stumptown disrupt jean shorts small batch artisan. Vice gentrify Godard, banjo freegan messenger bag butcher migas Marfa shabby chic pickled.
+            </p>
+            <br>
+          </div>
+          <div class="item">
+            <p>Locavore jean shorts raw denim, umami occupy seitan Truffaut Blue Bottle beard. Kogi Echo Park crucifix Carles cray, Tumblr 8-bit. Craft beer slow-carb direct trade, synth kogi small batch single-origin coffee beard. Cred four loko heirloom cliche Godard Shoreditch messenger bag direct trade, forage seitan narwhal Marfa dreamcatcher Portland. Tattooed craft beer drinking vinegar selvage iPhone deep v. Marfa pickled seitan, shabby chic Carles flexitarian stumptown disrupt jean shorts small batch artisan. Vice gentrify Godard, banjo freegan messenger bag butcher migas Marfa shabby chic pickled.
+            </p>
+            <br>
+          </div>
+          <div class="item">
+            <p>Locavore jean shorts raw denim, umami occupy seitan Truffaut Blue Bottle beard. Kogi Echo Park crucifix Carles cray, Tumblr 8-bit. Craft beer slow-carb direct trade, synth kogi small batch single-origin coffee beard. Cred four loko heirloom cliche Godard Shoreditch messenger bag direct trade, forage seitan narwhal Marfa dreamcatcher Portland. Tattooed craft beer drinking vinegar selvage iPhone deep v. Marfa pickled seitan, shabby chic Carles flexitarian stumptown disrupt jean shorts small batch artisan. Vice gentrify Godard, banjo freegan messenger bag butcher migas Marfa shabby chic pickled.
+            </p>
+            <br>
+          </div>
+          <div class="item">
+            <p>Locavore jean shorts raw denim, umami occupy seitan Truffaut Blue Bottle beard. Kogi Echo Park crucifix Carles cray, Tumblr 8-bit. Craft beer slow-carb direct trade, synth kogi small batch single-origin coffee beard. Cred four loko heirloom cliche Godard Shoreditch messenger bag direct trade, forage seitan narwhal Marfa dreamcatcher Portland. Tattooed craft beer drinking vinegar selvage iPhone deep v. Marfa pickled seitan, shabby chic Carles flexitarian stumptown disrupt jean shorts small batch artisan. Vice gentrify Godard, banjo freegan messenger bag butcher migas Marfa shabby chic pickled.
+            </p>
+            <br>
           </div>
         </div>
       </div>
@@ -106,6 +136,11 @@
     maxFont: 15,
     fontRatio: 30
   });
+  var msnry = new Masonry( "#container", {
+    columnWidth: 200,
+    itemSelector: '.item'
+  });
+
 </script>
 
 <script>
