@@ -20,7 +20,7 @@ def mentors():
 
     if (request.form['name']=="" or request.form['email']=="" or request.form['phone']=="" or request.form['school']=="" ):
         message = "Please fill all fields"
-        return render_template('students.html', message=message)
+        return render_template('mentors.html', message=message)
 
     # POST to Google
     print request.form
