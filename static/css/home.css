@@ -49,7 +49,9 @@ ul img {
 }
 
 .item p {
+  margin-top: 5px;
   font-family: "Oxygen"; 
+  font-size: 15px;
 }
 
 #container {
@@ -57,7 +59,7 @@ ul img {
   margin-right: auto;
   max-height: 565px;
   max-width: 1200px;
-  overflow: scroll;
+
 }
 
 .button{
@@ -128,7 +130,7 @@ ul img {
   width: 100%;
   margin: 0 auto;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 25px;
 }
 
 .splash-logo img {
@@ -235,7 +237,7 @@ ul img {
 .splash-content {
   width: 90%;
   max-width: 500px;
-  margin: 40px auto 0 auto;
+  margin: 20px auto 0 auto;
   text-align: center;
 }
 
@@ -328,7 +330,7 @@ button:hover {
 
 .sponsor-content {
   text-align: center;
-  padding-top: 25px;
+  padding-top: 15px;
   padding-bottom: 5px;
 }
 
@@ -347,7 +349,7 @@ button:hover {
 }
 
 #presented {
-  padding-top: 20px;
+  padding-top: 5px;
 }
 
 #presented-by {
@@ -358,7 +360,7 @@ button:hover {
 #presented-by img {
   height: 40px;
   width: auto;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
   padding-top: 8px;
   margin-left: -6px;
 }
@@ -370,4 +372,8 @@ button:hover {
 #about-text{
   padding-top: 15px;
   /*margin-bottom: -8px;*/
+}
+
+.section{
+  padding-top: 20px;
 }

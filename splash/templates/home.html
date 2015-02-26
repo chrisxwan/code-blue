@@ -20,8 +20,8 @@
 
 <body>
   <div id="fullpage">
-    <div class="section">
-      <div class="slide">      
+      <div class="section">
+  
         <div class="splash-image">
           <div class="splash-logo">
             <img src="static/images/codeblue-hlogo.png">
@@ -46,58 +46,59 @@
           </div>
         </div>
       </div>
-      <div class="slide">
+      <div class ='section'>
         <div style="text-align: center; margin-bottom: 10px;"><img src="/static/images/faq-header.png" height="40px" alt="F.A.Q."></div>
         <div id="container">
           <div class="item">
-            <b>When and where will CodeBlue take place?</b><br><br>
-            <p>CodeBlue 2015 will take place on Saturday, March 28, 2015. The program will run from morning until late afternoon. A more detailed schedule will be released closer to the actual event, and it will be held at Yale’s School of Management Building AKA Evans Hall.
+            <b>When and where will CodeBlue take place?</b><br>
+            <p>CodeBlue 2015 will take place on Saturday, March 28, 2015 from morning until late afternoon, and it will be held at Yale’s School of Management Building AKA Evans Hall. Check back soon for a more detailed schedule.
             </p>
           </div>
           <div class="item">
-            <b>Who can attend?</b><br><br>
-            <p>Any high school student is eligible to attend! We are specifically reaching out to New Haven and other local communities, but all students are encouraged to apply, including both students with and without programming experience.</p>
+            <b>Who can attend?</b><br>
+            <p>Any high school student is eligible to attend, including both students with and without programming experience.</p>
           </div>
           <div class="item">
-            <b>Do I need programming experience?</b><br><br>
-            <p>Not at all! In fact, the goal of CodeBlue is to expose students who have not had programming experience before to learn about computer science and software technology, so if you don’t have experience, you’re a perfect fit for our program. That being said, students who have had some programming experience will also find plenty to do and learn during the day!</p>
+            <b>Do I need programming experience?</b><br>
+            <p>Not at all! In fact, the goal of CodeBlue is to expose students who have not had programming experience to computer science. That being said, students who have had some programming experience will also find plenty to learn during the day!</p>
           </div>
           <div class="item">
-            <b>But what if I’m not a high school student?</b><br><br>
-            <p>We’re also looking for volunteers for the day of the event and to run workshops or give talks. We will be reaching out to mentors, but anyone who is interested in running workshops is strongly encouraged to email team@yhack.org with a description of your programming experience. Volunteers should sign up on the site! All involved should sign up for the CodeBlue Panlist to stay informed.</p>            
+            <b>But what if I’m not a high school student?</b><br>
+            <p>We’re also looking for volunteers and mentors for the day of the event. If you are interested sign up as a Mentor!</p>            
           </div>
           <div class="item">
-            <b>Will travel be reimbursed?</b><br><br>
-            <p>We anticipate that most students will be from nearby, but accommodations will be made for accepted students who live far away. If you are traveling a significant distance, or if travel costs are a concern, definitely let us know by emailing team@yhack.org and we will make accommodations!</p>
+            <b>Will travel be reimbursed?</b><br>
+            <p>We are not providing travel reimbursements. Most attendees commute from the New Haven area.</p>
+          </div>
+
+          <div class="item">
+            <b>How much does it cost to attend?</b><br>
+            <p>The entire day is completely free!</p>
           </div>
           <div class="item">
-            <b>Is CodeBlue open for parents as well?</b><br><br>
-            <p>Though the workshops will be for students only, parents are welcome to attend speakers, opening and closing ceremonies! We want you to be confident in what your children are learning and as excited as they are about the field!</p>
-          </div>
-          <div class="item">
-            <b>How much does it cost to attend?</b><br><br>
-            <p>Not only is CodeBlue completely free, but we will provide lunch as well!</p>
-          </div>
-          <div class="item">
-            <b>When is the deadline to register?</b><br><br>
+            <b>When is the deadline to register?</b><br>
             <p>March 21st by 11:59pm! Register now!</p>
           </div>
           <div class="item">
-            <b>What should I bring?</b><br><br>
-            <p>A laptop and your creativity! If you cannot bring a laptop, feel free to let us know and we will try our best to make accommodations!</p>
+            <b>What should I bring?</b><br>
+            <p>A laptop, a photo ID, and your creativity! If you cannot bring a laptop, feel free to let us know and we will try our best to make accommodations!</p>
           </div>
           <div class="item">
-            <b>Will you provide food?</b><br><br>
+            <b>Is CodeBlue open for parents as well?</b><br>
+            <p>CodeBlue is for students only.</p>
+          </div>
+          <div class="item">
+            <b>Will you provide food?</b><br>
             <p>YHack will provide breakfast, lunch and snacks during the event.</p>
           </div>
           <div class="item">
-            <b>Other Questions</b><br><br>
+            <b>Other Questions</b><br>
             <p>If there is anything else you are wondering about, please feel free to contact us at team@yhack.org. We are looking forward to seeing you on campus in March!</p>
           </div>
         </div>
       </div>
-    </div>
   </div>
+
 
 
 <ul id="scene" data-limit-x="false" data-limit-y="false">
@@ -121,7 +122,31 @@
 <script src="static/javascript/parallax.js"></script> 
 <script>
   $(document).ready(function() {
-    $('#fullpage').fullpage();
+    $('#fullpage').fullpage({
+              css3: true,
+        scrollingSpeed: 700,
+        autoScrolling: true,
+        fitToSection: true,
+        scrollBar: false,
+        easing: 'easeInOutCubic',
+        easingcss3: 'ease',
+        loopBottom: false,
+        loopTop: false,
+        loopHorizontal: true,
+        continuousVertical: false,
+        normalScrollElements: '#element1, .element2',
+        scrollOverflow: false,
+        touchSensitivity: 15,
+        normalScrollElementTouchThreshold: 5,
+
+    });
+
+
+
+
+
+
+
     var msnry = new Masonry( "#container", {
       isFitWidth: true
     });
@@ -131,7 +156,12 @@
     $('#mentor').click(function() {
       window.location= "/mentors";
     });
+
+
   });
+
+
+
   var scene = document.getElementById('scene');
   var parallax = new Parallax(scene); 
   $('h4').flowtype({
