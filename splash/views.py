@@ -38,8 +38,12 @@ def mentors():
 @splash.route('/students', methods=['GET', 'POST'])
 def students():
     if request.method == 'GET':
-        return render_template('students.html')
+        message = ""
+        return render_template('students.html', message=message)
 
+    if (request.form['name']=="" or request.form['email']=="" or request.form['year']=="" or request.form['school']=="" or request.form['city']=="" or request.form['emergency_name']=="" or request.form['emergency_number']=="" or request.form['emergency_name']==""):
+        message = "Please fill all fields"
+        return render_template('students.html', message=message)
     # POST to Google
     url = "https://docs.google.com/forms/d/1G_OpW-8__XR7Chtw-zg8knHSinYr_9uGPAlzQLBBo3Q/formResponse"
     payload = {

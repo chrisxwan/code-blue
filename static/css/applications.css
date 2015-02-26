@@ -186,3 +186,8 @@ button:hover {
   padding-top: 15px;
   /*margin-bottom: -8px;*/
 }
+.error{
+  font-size: 30px;
+  margin: 10px;
+  color:red;
+}

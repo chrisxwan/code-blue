@@ -237,7 +237,7 @@ ul img {
 .splash-content {
   width: 90%;
   max-width: 500px;
-  margin: 20px auto 0 auto;
+  margin: 40px auto 0 auto;
   text-align: center;
 }
 
@@ -376,4 +376,8 @@ button:hover {
 
 .section{
   padding-top: 20px;
+}
+.error{
+  margin: 15px;
+  color:red;
 }
