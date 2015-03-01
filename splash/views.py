@@ -12,6 +12,10 @@ splash = Blueprint('splash', __name__, template_folder="templates")
 def index():
     return render_template('home.html')
 
+@splash.route('/confirmation')
+def confirm():
+    return render_template('confirmation.html')
+
 @splash.route('/mentors', methods=['GET', 'POST'])
 def mentors():
     if request.method == 'GET':
@@ -38,7 +42,7 @@ def mentors():
     }
     r = requests.post(url, data=payload)
 
-    return redirect(url_for('splash.index'))
+    return redirect('/confirmation')
 
 @splash.route('/students', methods=['GET', 'POST'])
 def students():
@@ -69,4 +73,4 @@ def students():
     }
     r = requests.post(url, data=payload)
 
-    return redirect(url_for('splash.index'))
+    return redirect('/confirmation')
