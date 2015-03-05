@@ -37,8 +37,7 @@ def mentors():
       "entry_1041567284" : request.form['html'],
       "entry_1999826878" : request.form['css'],
       "entry_915431056"  : request.form['javascript'],
-      "entry_440391179"  : request.form['meteor'],
-      "entry_122881673"  : request.form['entrepreneurship']
+      "entry_1615646692" : request.form['role']
 
     }
     r = requests.post(url, data=payload)
