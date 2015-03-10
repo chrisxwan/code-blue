@@ -75,6 +75,7 @@ ul img {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
 #ship {
   position: relative;
   z-index: 2;
@@ -375,7 +376,7 @@ button:hover {
 }
 
 .section{
-  padding-top: 20px;
+  padding-top: 8%;
 }
 .block{
   position: absolute;
