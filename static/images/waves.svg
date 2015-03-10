@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="624px" height="459px" viewBox="0 0 624 459" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Cup 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M0,0 L4.0655732e-14,452.840177 C4.53192485e-14,504.784331 40.5494636,558.210968 91.0375444,570.482468 C91.0375444,570.482468 171.933176,599.991324 319.809942,599.991328 C467.686707,599.991333 533.085602,572.067171 533.085602,572.067171 C583.115801,558.164075 623.673292,504.774611 623.673292,452.840177 L623.673292,0"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="code-blue-hlogo" sketch:type="MSLayerGroup" transform="translate(0.000000, -186.000000)">
+            <g id="Cup-2" transform="translate(0.000000, 45.000000)">
+                <mask id="mask-2" sketch:name="Path 1" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Path-1" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                <path d="M-0.372559282,191.389625 C-0.371660768,191.312036 -0.324799323,191.278766 -0.257333948,191.321916 C-0.257333948,191.321916 82.3047003,244.570438 158.370373,244.570438 C244.40677,244.570438 396.194355,141.134759 486.670135,141.134759 C577.145914,141.134759 620.463878,196.529606 620.463878,196.529606 L629.247919,599.991328 L-5.10436727,599.991328 L-0.372559282,191.389625 Z" id="Path-4" fill-opacity="0.926120924" fill="#295CBA" sketch:type="MSShapeGroup" mask="url(#mask-2)"></path>
+                <path d="M2.09078023,196.668278 C2.09214651,196.591691 2.1516809,196.564426 2.20348912,196.595177 C2.20348912,196.595177 82.3046761,244.570438 158.370348,244.570438 C244.406746,244.570438 396.194331,141.134759 486.670111,141.134759 C577.14589,141.134759 629.247919,196.529606 629.247919,196.529606 L629.247895,599.991328 L-5.10439149,599.991328 L2.09078023,196.668278 Z" id="Path-2" fill-opacity="0.879999995" fill="#34A4DC" sketch:type="MSShapeGroup" mask="url(#mask-2)">
+                    <g transform="translate(312.071764, 370.563044) scale(-1, 1) translate(-312.071764, -370.563044) "></g>
+                </path>
+            </g>
+        </g>
+    </g>
+</svg>
