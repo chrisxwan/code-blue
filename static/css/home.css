@@ -384,3 +384,14 @@ button:hover {
   z-index: 5;
   background-color: red;
 }
+#sponosor-page{
+  text-align: center;
+}
+.sponsor{
+  width: 400px;
+  height: auto;
+    position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+}
