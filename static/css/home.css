@@ -372,11 +372,11 @@ button:hover {
 
 #about-text{
   padding-top: 15px;
-  /*margin-bottom: -8px;*/
+
 }
 
 .section{
-  padding-top: 8%;
+  padding-top: 2%;
 }
 .block{
   position: absolute;
@@ -391,7 +391,7 @@ button:hover {
 .sponsor{
   width: 400px;
   height: auto;
-    position: absolute;
+  position: absolute;
   margin: 0 auto;
   left: 0;
   right: 0;
