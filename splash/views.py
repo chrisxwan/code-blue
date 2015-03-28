@@ -1,5 +1,5 @@
 from flask import (Flask, render_template, Response, request, 
-    Blueprint, redirect, send_from_directory, send_file, jsonify, g, url_for, flash)
+    Blueprint, redirect, send_from_directory, send_file, jsonify, g, url_for, flash, send_file)
 from flask.ext.login import login_user, logout_user, current_user, login_required
 from splash import *
 from main import app, db
@@ -75,3 +75,7 @@ def students():
     r = requests.post(url, data=payload)
 
     return redirect('/confirmation')
+
+@splash.route('/github', methods=['GET'])
+def github():
+  return send_file("static/Github for Mac 181.zip", as_attachment=True)
