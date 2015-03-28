@@ -1,0 +1,296 @@
+/*********************
+
+General Styling
+
+*********************/
+
+html, body {
+	height: 100%;
+	background-color: transparent;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+html {
+	background: url('../images/test.png') no-repeat center center fixed;
+	background: linear-gradient(rgba(0,0,0,.5) 0%,rgba(0,0,0,.5) 100%), url('../images/test.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+a {
+	color: inherit;
+	-moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+h2 {
+	padding: 5px 0 15px 0;
+	color: white;
+	font-size: 28px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h3 {
+	font-family: "Montserrat", sans-serif;
+	color: white;
+	font-size: 1.3em;
+	text-align: left;
+	padding: 30px 0 10px 0;
+}
+
+a:hover,
+a:focus {
+	color: rgba(39, 174, 96, .8);
+}
+
+.loaded {
+	opacity: 0;
+}
+
+/*********************
+
+Helper Classes
+
+*********************/
+
+.center {
+	text-align: center !important;
+}
+
+.red {
+	color: red !important;
+}
+
+.green {
+	color: rgb(39, 174, 96) !important;
+}
+
+.clear-bg {
+	background-color: transparent !important;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+/*********************
+
+Header
+
+*********************/
+
+header {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 1.7em;
+	padding: 1em 0;
+	background-color: rgba(255,255,255,.15);
+	border-bottom: 1px solid rgba(255,255,255,.1);
+	z-index: 50;
+}
+
+header div {
+	display: inline-block;
+}
+
+header #logo {
+	line-height: 1.7em;
+	float: left;
+	margin-left: 1.3em;
+}
+
+header #logo-home {
+	cursor: pointer;
+}
+
+header img {
+	height: 1.7em;
+}
+
+header #header-links-wrapper {
+	line-height: 1.7em;
+	float: right;
+	margin-right: 1.3em;
+}
+
+header .header-link {
+	margin-left: .8em;
+	color: rgba(255,255,255,.9);
+}
+
+header .header-link a {
+  font-size: .9em;
+}
+
+/*********************
+
+Live
+
+*********************/
+
+#live-body-wrapper {
+	height: 100%;
+}
+
+#live-content-wrapper {
+	position: absolute;
+	top: 120px;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	min-height: 350px;
+}
+
+#live-content {
+	position: absolute;
+	width: 100%;
+}
+
+#live-content h2 {
+	text-transform: uppercase;
+	margin-top: 0;
+}
+
+.heading {
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+
+.heading h1 {
+	margin-bottom: 15px;
+}
+
+.heading img {
+  height: 20px;
+  width: auto;
+  padding-left: 6px;
+}
+
+.content-wrapper {
+	padding: 20px 0;
+	max-width: 900px;
+	width: 90%;
+	margin: 0 auto 30px auto;
+	background-color: rgba(0,0,0,.55);
+}
+
+.content-wrapper p {
+	font-size: 1em;
+	line-height: 1.1em;
+	color: rgba(255,255,255,.8);
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+}
+
+.inner-wrapper {
+	padding-left: 1.5em;
+	padding-right: 1.5em;
+}
+
+.content-wrapper > .inner-wrapper {
+	margin-bottom: 0;
+}
+
+.content-wrapper p:not(:last-child){
+	margin-bottom: 7px;
+}
+
+.button-wrapper {
+	padding: 30px 0 5px 0;
+}
+
+/*********************
+
+Index
+
+*********************/
+
+.left-content {
+	width: 57%;
+	margin-left: 0;
+	float: left;
+}
+
+.right-content {
+	width: 38%;
+	margin-right: 0;
+	float: right;
+}
+
+@media (max-width: 750px) {
+  .left-content {
+  	float: none;
+  	margin-left: auto;
+  	padding: 20px 0;
+  	width: 100%;
+  }
+  .right-content {
+  	float: none;
+  	margin-right: auto;
+  	margin-top: 50px;
+  	padding: 20px 0;
+  	width: 100%;
+  }
+}
+
+/*********************
+
+Prizes
+
+*********************/
+
+p.api-title {
+	cursor: pointer;
+}
+
+p.api-title:hover,
+p.api-title:focus {
+	color: rgba(39, 174, 96, .8);
+}
+
+div.api-explanation,
+p.api-explanation {
+	font-size: .8em;
+	height: 0;
+	display: none;
+	opacity: 0;
+	margin-bottom: 20px;
+}
+
+/*********************
+
+Schedule
+
+*********************/
+
+.schedule-content td {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.schedule-content td {
+	text-align: left;
+	color: #D7D7D7;
+}
+
+.schedule-content td.time {
+	padding-right: 1em;
+	text-align: right;
+}
+
+.schedule-content td.time {
+	display: inline-block;
+}
+
+.schedule-content td.time {
+	width: 11em;
+}
+
+

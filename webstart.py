@@ -12,6 +12,9 @@ print "Starting webapp!"
 from splash.views import splash
 app.register_blueprint(splash)
 
+from live.views import live
+app.register_blueprint(live, url_prefix='/live')
+
 
 # modules manage their own static files. This serves them all up.
 @app.route("/<blueprint_name>/static/<path:fn>")
