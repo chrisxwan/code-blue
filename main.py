@@ -26,3 +26,7 @@ db = SQLAlchemy(app)
 
 # for flask-login -- secret key needed to use sessions
 # app.secret_key = os.environ['USER_AUTH_SECRET_KEY']
+
+# for S3
+app.aws_key = os.environ['CODEBLUE_AWS_ACCESS_KEY_ID']
+app.aws_secret = os.environ['CODEBLUE_AWS_SECRET_ACCESS_KEY']

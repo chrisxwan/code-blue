@@ -4,6 +4,8 @@ from flask.ext.login import login_user, logout_user, current_user, login_require
 from splash import *
 from main import app, db
 import requests
+from boto.s3.connection import S3Connection
+from boto.s3.key import Key
 
 splash = Blueprint('splash', __name__, template_folder="templates")
 
@@ -78,4 +80,7 @@ def students():
 
 @splash.route('/github', methods=['GET'])
 def github():
-  return send_file("static/Github for Mac 181.zip", as_attachment=True)
+  conn = S3Connection(app.aws_key, app.aws_secret)
+  bucket = conn.get_bucket("yhack-static")
+  key = bucket.get_key("GitHub for Mac 181.zip")
+  return redirect(key.generate_url(3600, query_auth=True, force_http=True))
