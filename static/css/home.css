@@ -439,3 +439,9 @@ button:hover {
   left: 0;
   right: 0;
 }
+
+#closed{
+  font-size: 22px;
+  color: #35A4DB;
+  margin-bottom: 35px;
+}
